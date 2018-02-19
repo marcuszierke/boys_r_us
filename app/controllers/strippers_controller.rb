@@ -1,4 +1,6 @@
 class StrippersController < ApplicationController
+  skip_before_action :authenticate_user!, only: [:index]
+
   def index
     @strippers = Stripper.all
   end

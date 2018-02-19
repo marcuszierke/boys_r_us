@@ -1,0 +1,87 @@
+.rating {
+  height: 30px;
+  width: 55px;
+}
+#popup {
+  display:none;
+}
+#adding {
+  background-color: #C4CBCA;
+  text-align:center;
+  padding-top: 67px;
+}
+.card {
+  height: 300px;
+  margin-bottom: 20px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  background-size: cover !important;
+  background-position: center;
+  box-shadow: 2px 2px 4px grey;
+  color: black;
+  opacity:0.85;
+  position: relative;
+  transition: all 250ms ease;
+  border-radius: 2px;
+}
+.card-category {
+  position: absolute;
+  top: 35px;
+  left: 10px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.card-category {
+  font-size: 15px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+.card-description h2 {
+  font-size: 15px;
+}
+.card-footer {
+  background-color: white ;
+  position: absolute;
+  height: 70px ;
+  bottom:0px;
+  right:0px;
+  left: 0px;
+  border-radius:2px;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  padding-left: 0px;
+  padding-right: 0px;
+  flex-grow: 1 1 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.card-footer p {
+  font-size: 20px;
+}
+.stripper-price p {
+  margin: 0;
+}
+.fa-star {
+  font-size:18px;
+  margin-bottom: 5px;
+  opacity: 0.8;
+}
+.card:hover {
+  opacity:1;
+  padding: 10px;
+  margin-left: -5px;
+  margin-right: -5px;
+.fa-star {
+  opacity:0.85;
+}
+.card-description {
+    display:none;
+  }
+  #popup {
+    text-align: left;
+    padding-top: 50px;
+    padding-left: 10px;
+    display: block ;
+  }
+}

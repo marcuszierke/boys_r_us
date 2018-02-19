@@ -1,2 +1,79 @@
-<h1>Strippers#show</h1>
-<p>Find me in app/views/strippers/show.html.erb</p>
+<div class="wrapper-profile">
+
+  <div class="images">
+    <div class>
+      <%= image_tag("image.jpg", class: "image-large") %>
+    </div>
+    <div class="image-collection">
+
+      <%= image_tag("image.jpg", class: "image-small") %>
+      <%= image_tag("image.jpg", class: "image-small") %>
+      <%= image_tag("image.jpg", class: "image-small") %>
+      <%= image_tag("image.jpg", class: "image-small") %>
+    </div>
+  </div>
+  <div class="border-vertical">
+
+  </div>
+
+  <div class="biography">
+    <div class="name-price">
+      <div class="biography-name">
+        <h2>Marco Model</h2>
+      </div>
+      <div class="name-price">
+        <h2>€100/h</h2>
+      </div>
+    </div>
+    <div class="biography-infos">
+      <div class="biography-height">
+
+        <p><%= image_tag("height-icon.png", class: "image-tiny") %>178cm</p>
+      </div>
+      <div class="biography-eyecolor"><p><%= image_tag("eye-icon.png", class: "image-tiny") %>green</p></div>
+      <div class="biography-haircolor"><p><%= image_tag("hair.png", class: "image-tiny") %>dark</p></div>
+      <div class="biography-ethnicity"><p><%= image_tag("ethnicity-icon.png", class: "image-tiny") %>caucasian</p></div>
+      <div class="biography-rating"><% 5.times do %>
+        <i class="fas fa-star" style="color:#ff2f515c; font-size: 15px;"></i>
+        <% end %></div>
+      </div>
+      <div class="biography-description">
+       <h4>Description:</h4>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia laborum sunt sed! Dolores voluptatibus suscipit officia, voluptatem harum vero. i eum iure, repudiandae voluptatibus nam aperiam facilis harum velit aliquam quasi deleniti molesti</p>
+     </div>
+     <div class="biography-characters">
+       <h4>Services:</h4>
+       <div class="characters-wrapper">
+         <div class="characters">
+          <p><%= image_tag("policeman.png", class: "image-services") %>Policeman</p>
+          <p><%= image_tag("fireman.png", class: "image-services") %>Firefighter</p>
+          <p><%= image_tag("delivery.png", class: "image-services") %>Delivery guy</p>
+        </div>
+
+        <div class="characters">
+          <p><%= image_tag("motz.png", class: "image-services") %>Motz Salesman</p>
+          <p><%= image_tag("soldier.png", class: "image-services") %>Soldier</p>
+          <p><%= image_tag("professor.png", class: "image-services") %>Professor</p>
+        </div>
+        <div class="characters">
+          <p><%= image_tag("cowboy.png", class: "image-services") %>Cowboy</p>
+          <p><%= image_tag("worker.png", class: "image-services") %>Construction Worker</p>
+          <p><%= image_tag("santa.png", class: "image-services") %>Santa</p>
+        </div>
+
+        <div class="characters">
+          <p><%= image_tag("cabdriver.png", class: "image-services") %>Cab Driver</p>
+          <p><%= image_tag("waiter.png", class: "image-services") %>Waiter</p>
+          <p><%= image_tag("bowling.png", class: "image-services") %>Bowling Instructor</p>
+        </div>
+
+      </div>
+    </div>
+    <div class="btn-container">
+
+      <a href="#" class="btn btn-primary btn-lg profile">Book Marco now</a>
+    </div>
+
+  </div>
+
+</div>

@@ -1,1 +1,168 @@
 // Specific CSS for your home-page
+
+
+.wrapper-profile {
+  width: 99%;
+  height: calc(100% - 140px);
+  margin: 5px auto;
+  background-color: white;
+  display: flex;
+}
+
+.images {
+  padding: 25px;
+  box-sizing: border-box;
+  width: 40%;
+
+}
+
+.image-large {
+  width: 100%;
+  height: 400px;
+  -webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.image-small {
+  width: 24%;
+  padding: 5px;
+
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+
+}
+
+.image-collection {
+  margin: 35px auto;
+  width: 100%;
+  box-sizing: border-box;
+
+
+}
+
+.border-vertical {
+  border-right: 1px solid #eae0e0;
+  margin: 28px 0;
+}
+
+.biography {
+  padding: 30px;
+  box-sizing: border-box;
+  width: 60%;
+
+  position:relative;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.name-price {
+  display:flex;
+  justify-content: space-between;
+  h2 {
+    padding: 5px;
+    margin: 5px;
+  }
+
+}
+
+
+.biography-infos {
+  display:flex;
+  justify-content: space-around;
+  p {
+    margin: 0;
+    font-size: 14px;
+    font-weight:lighter;
+  }
+  img {
+    margin-right: 10px;
+  }
+}
+
+
+.characters {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  p {
+
+    font-size: 14px;
+    font-weight:lighter;
+  }
+  img {
+    margin-right: 10px;
+  }
+}
+
+.image-tiny {
+  height: 25px;
+}
+
+.image-services {
+  width: 20px;
+  height: auto;
+}
+
+.biography-description {
+
+  h4 {
+    color: #484848;
+    font-size: 12px;
+    font-weight:bold;
+  }
+  p {
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 14px;
+  }
+
+  border-top: 1px solid lightgrey;
+}
+
+.biography-characters {
+
+  h4 {
+    color: #484848;
+    font-size: 12px;
+    font-weight:bold;
+  }
+
+  border-top: 1px solid lightgrey;
+}
+
+
+.characters-wrapper {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+
+.btn.btn-primary {
+  border: 0px solid black;
+  background-color: #FF2F51;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+
+}
+
+
+.btn-container {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+
+// Specific CSS for your home-page

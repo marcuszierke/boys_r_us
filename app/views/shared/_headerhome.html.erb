@@ -1,0 +1,18 @@
+    <header class="logo-nav">
+      <figure class="logo-wrap">
+        <%= image_tag("logo-boys.png") %>  <p>Because you deserve it</p>
+      </figure>
+
+      <nav class="left-nav">
+        <p>
+        </p>
+      </nav><!-- end left-nav -->
+
+      <nav class="right-nav">
+
+          <%= link_to "Log In", new_user_session_path, class: "sign-in-btn" %>
+          <%= link_to "Sign up", new_user_registration_path, class: "sign-up-btn" %>
+
+      </nav>
+
+    </header>

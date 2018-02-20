@@ -13,7 +13,6 @@
 .card {
   height: 300px;
   margin-bottom: 20px;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   background-size: cover !important;
   background-position: center;
   box-shadow: 2px 2px 4px grey;
@@ -21,6 +20,7 @@
   opacity:0.85;
   position: relative;
   transition: all 250ms ease;
+
   border-radius: 2px;
 }
 .card-category {
@@ -29,6 +29,9 @@
   left: 10px;
   font-size: 12px;
   text-transform: uppercase;
+  span {
+    background-color: white;
+  }
 }
 .card-category {
   font-size: 15px;
@@ -37,7 +40,13 @@
   left: 10px;
 }
 .card-description h2 {
-  font-size: 15px;
+  font-size: 12px;
+  font-weight:light;
+  letter-spacing: 1px;
+  line-height: 1.6;
+  span {
+    background-color:white;
+  }
 }
 .card-footer {
   background-color: white ;
@@ -68,6 +77,7 @@
   opacity: 0.8;
 }
 .card:hover {
+
   opacity:1;
   padding: 10px;
   margin-left: -5px;

@@ -2,7 +2,6 @@ class StrippersController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
 
   def index
-    @show_navbar_footer = false;
     @strippers = Stripper.all
   end
 

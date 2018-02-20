@@ -103,10 +103,6 @@ margin-top: 36px;
     font-weight: lighter;
 }
 
-
-
-
-
 .wrapper-profile {
   width: 99%;
   min-height: calc(100% - 140px);
@@ -129,13 +125,11 @@ margin-top: 36px;
   -webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
   -moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
   box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
-
 }
 
 .image-small {
   width: 25%;
   padding: 5px;
-
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
 
 }
@@ -157,8 +151,7 @@ margin-top: 36px;
   padding: 30px;
   box-sizing: border-box;
   width: 100%;
-
-  min-height:100vh;
+  min-height:80vh;
   position:relative;
   display:flex;
   flex-direction: column;

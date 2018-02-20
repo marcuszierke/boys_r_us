@@ -3,8 +3,8 @@
     <% @strippers.each do |stripper| %>
       <%= link_to stripper_path(stripper) do %>
         <div class="col-xs-12 col-sm-4">
-          <div id="parent" class="card" style="background-image: linear-gradient(345deg, rgba(12, 51, 93, 0.77) 0%, rgba(0,36,61,0.2) 62%), url( '<%= image_path stripper.pics1 %>');">
-            <div id="popup" class="card-description"><h2><span><%= stripper.description%></h2></span><p></p> </div>
+          <div id="parent" class="card" style="background-image: linear-gradient(345deg, rgba(12, 51, 93, 0.77) 0%, rgba(0,36,61,0.2) 62%), url( '<%= cl_image_path(stripper.pics1, gravity: :face) %>');">
+            <div id="popup" class="card-description"><h2><span><%= stripper.description.split("*")[0] %></h2></span><p></p> </div>
             <div class="card-category">
              <h4><span><%= stripper.name %></span></h4>
             </div>

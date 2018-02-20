@@ -1,4 +1,5 @@
-c = 1
+require 'open-uri'
+require 'nokogiri'
 
 photos = [
   ['http://res.cloudinary.com/dncveixad/image/upload/v1519057757/nezqhtnsaakpqslfmryk.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519057752/vywgvwvrvuycyhrnd4os.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519057748/l7pprbduniiq4pnqzlhp.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519057744/obcant3wg8fo9dxy6uib.jpg'],
@@ -101,24 +102,47 @@ photos = [
   ['http://res.cloudinary.com/dncveixad/image/upload/v1519039910/kult_model_Zandre_Du_Plessis_144051.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519039889/kult_model_Zandre_Du_Plessis_144046.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519039875/kult_model_Zandre_Du_Plessis_144034.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519039865/kult_model_Zandre_Du_Plessis_144028.jpg'],
   ['http://res.cloudinary.com/dncveixad/image/upload/v1519039757/kult_model_Julian_Weigl_145265.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519039746/kult_model_Julian_Weigl_147117.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519039742/kult_model_Julian_Weigl_145263.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519039736/kult_model_Julian_Weigl_145262.jpg']
 ]
+
+c = 1
+
+url = open('https://www.ocf.berkeley.edu/~montymex/pickup/cheesy.html').read
+html_file = Nokogiri::HTML(url)
+
+quotes = []
+html_file.search('td').each do |item|
+  quotes << item.text.strip
+end
+
+selection = quotes.each_slice(3).map(&:first)
+
+selection = selection[1..-1]
+
+
 Stripper.destroy_all
-99.times do
+
+50.times do
+  characters = %w(policeman firefighter delivery motz soldier prof cowboy worker santa cab waiter bowling)
+  arr = []
+  rounds = (5..12).to_a.sample
+  arr << characters.sample(rounds)
+  characters = arr.join(" ")
   name = Faker::Superhero.name
-  description = Faker::Lorem.paragraph(5)
+  description = "#{selection[c]}*#{Faker::Lorem.paragraph(10)}"
   price = (55..294).to_a.sample
   review = (0..50).to_a.sample.to_f / 10
+  ethnicity = %w(oceanic caucasian black asian latino).sample
   city = %w(Berlin Barcelona Hamburg Sydney London Paris Madrid Cologne Frankfurt Rio).sample
   height = (165..203).to_a.sample
   hair_color = ['brown', 'black', 'blond', 'white', 'light-brown', 'dark-brown', 'dark-blond', 'ginger'].sample
   eye_color = %W(green blue green-grey blue-grey hazel brown).sample
   age = (18..65).to_a.sample
   email = Faker::Internet.email
-  photo_urls = photos.sample
+  photo_urls = photos[c]
   pics1 = photo_urls[0]
   pics2 = photo_urls[1]
   pics3 = photo_urls[2]
   pics4 = photo_urls[3]
-  Stripper.create(password: "password", email: email, name: name, price: price, review: review, description: description, city: city, height: height, hair_color: hair_color, eye_color: eye_color, age: age, pics1: pics1, pics2: pics2, pics3: pics3, pics4: pics4)
+  Stripper.create(password: "password", email: email, characters: characters, ethnicity: ethnicity, name: name, price: price, review: review, description: description, city: city, height: height, hair_color: hair_color, eye_color: eye_color, age: age, pics1: pics1, pics2: pics2, pics3: pics3, pics4: pics4)
   p "worked, number #{c}"
   c += 1;
 end
@@ -128,9 +152,10 @@ p2 = 'http://res.cloudinary.com/dncveixad/image/upload/v1519039757/kult_model_Ju
 p3 = 'http://res.cloudinary.com/dncveixad/image/upload/v1519039757/kult_model_Julian_Weigl_145265.jpg'
 p4 = 'http://res.cloudinary.com/dncveixad/image/upload/v1519039757/kult_model_Julian_Weigl_145265.jpg'
 
-Stripper.create(password: "password", email: "tuan@lewagon.com", name: "Tuan 'The Balls' Perera", price: 19, review: 5, description: "Must have experience - New York Times", city: "Bangcock", height: 181, hair_color: "dark-brown", eye_color: "brown", age: 48, pics1: p1, pics2: p2, pics3: p3, pics4: p4)
+Stripper.create(password: "password", email: "tuan@lewagon.com", name: "Tuan 'The Balls' Perera", 
+  ethnicity: "oceanic", characters: "motz prof cowboy santa cab waiter bowling",price: 19, review: 5, 
+  description: "Must have experience - New York Times", city: "Bangcock", height: 181, hair_color: "dark-brown", 
+  eye_color: "brown", age: 48, pics1: p1, pics2: p2, pics3: p3, pics4: p4)
 
 
 
-
-# how to handle those parms: :ethnicity, :characters, :solo, :availability, :pics?

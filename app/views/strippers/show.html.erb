@@ -5,7 +5,7 @@
       <div class="images">
         <div class="text-center">
           <!-- cloudinary helper should be used -->
-          <%= image_tag(@stripper.pics1, width: 300, height: 300, crop: :fit, gravity: :face, class: "image-large") %>
+          <%= cl_image_tag(@stripper.pics1, width: 330, crop: :fill, class: "image-large") %>
         </div>
         <div class="image-collection text-center">
 
@@ -33,7 +33,7 @@
           </div>
           <div class="biography-eyecolor"><p><%= image_tag("eye-icon.png", class: "image-tiny") %><%= @stripper.eye_color %></p></div>
           <div class="biography-haircolor"><p><%= image_tag("hair.png", class: "image-tiny") %><%= @stripper.hair_color %></p></div>
-          <div class="biography-ethnicity"><p><%= image_tag("ethnicity-icon.png", class: "image-tiny") %>caucasian</p></div>
+          <div class="biography-ethnicity"><p><%= image_tag("ethnicity-icon.png", class: "image-tiny") %><%= @stripper.ethnicity %></p></div>
           <div class="biography-rating">
             <% @stripper.review.times do %>
             <i class="fas fa-star" style="color:#ff2f515c; font-size: 15px;"></i>
@@ -45,8 +45,8 @@
 
           </div>
           <div class="biography-description">
-           <h4>Description:</h4>
-           <p><%= @stripper.description %></p>
+           <h4>Why you want me</h4>
+           <p><%= @stripper.description.split("*")[1] %></p>
          </div>
          <div class="biography-characters">
            <h4>Services:</h4>

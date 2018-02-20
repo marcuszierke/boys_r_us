@@ -2,7 +2,7 @@
 
   <div class="images">
     <div class="text-center">
-      <%= image_tag(@stripper.pics1, width: 300, height: 400, crop: :fill, gravity: :face) %>
+      <%= image_tag(@stripper.pics1, width: 300, height: 400, crop: :fill, gravity: :face, class: "image-large") %>
     </div>
     <div class="image-collection text-center">
 
@@ -76,7 +76,8 @@
     </div>
     <div class="btn-container">
 
-      <a href="#" class="btn btn-primary btn-lg profile">Book <%= @stripper.name.split(' ')[0] %> now</a>
+      <%= link_to "Book now", new_stripper_booking_path(@stripper), class: "btn btn-primary btn-lg profile" %>
+
     </div>
 
   </div>

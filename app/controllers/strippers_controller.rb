@@ -2,6 +2,7 @@ class StrippersController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index]
 
   def index
+    @show_navbar_footer = false;
     @strippers = Stripper.all
   end
 
@@ -16,7 +17,7 @@ class StrippersController < ApplicationController
   end
 
   def edit
-    @stripper = Stripper.find(params[:id])    
+    @stripper = Stripper.find(params[:id])
   end
 
   private

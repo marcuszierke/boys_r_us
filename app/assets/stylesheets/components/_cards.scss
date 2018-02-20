@@ -31,6 +31,8 @@
   text-transform: uppercase;
   span {
     background-color: white;
+        opacity: 0.5;
+    padding: 0 8px;
   }
 }
 .card-category {
@@ -46,6 +48,8 @@
   line-height: 1.6;
   span {
     background-color:white;
+        opacity: 0.8;
+    padding: 0 8px;
   }
 }
 .card-footer {

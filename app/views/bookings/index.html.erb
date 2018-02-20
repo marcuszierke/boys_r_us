@@ -1,1 +1,8 @@
-index.html.erb
+
+<ul>
+<%  @user.bookings.each do |booking| %>
+<li><%= booking %></li>
+<% end %>
+
+
+</ul>

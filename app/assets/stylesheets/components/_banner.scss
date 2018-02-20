@@ -4,7 +4,7 @@ body {
 .banner {
   color: white;
   text-align: center;
-  height: 100%;
+  height: calc(100% - 140px);
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
   background-position: center;
   background-size: cover !important;

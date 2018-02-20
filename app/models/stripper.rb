@@ -6,7 +6,7 @@ class Stripper < ApplicationRecord
   has_many :bookings
   has_many :users, through: :bookings
 
-  validates :name, :city, :description, :hair_color, :eye_color, presence: true
-  validates :height, :price, :review, numericality: true, presence: true
+  # validates :name, :city, :description, :hair_color, :eye_color, presence: true
+  # validates :height, :price, :review, numericality: true, presence: true
   # validates :solo, :availability, presence: true
 end

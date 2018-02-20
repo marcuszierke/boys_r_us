@@ -1,1 +1,130 @@
-new.html.erb
+
+
+
+
+
+
+
+<div class= "container">
+
+
+
+
+
+
+  <div class="booking">
+
+
+<div class="name">
+
+    <h2>Your entertainer</h2>
+      <h3><%= @stripper.name %></h3>
+
+      <%= image_tag "image", class: "stripper-image" %>
+  </div>
+
+
+
+
+
+  <div class="stripinfo">
+    <h2>Details</h2>
+    <div id="height">
+      <%= image_tag("height-icon.png", class: "image-tiny") %><%= @stripper.height %>
+    </div>
+    <p></p>
+    <div id="ethnicity">
+      <%= image_tag("ethnicity-icon.png", class: "image-tiny") %><%= @stripper.ethnicity %> caucasian
+    </div>
+  </div>
+
+
+
+<div class="calendar">
+   <div class="month">
+  <ul>
+    <li class="prev">&#10094;</li>
+    <li class="next">&#10095;</li>
+    <li>August<br><span style="font-size:18px">2018</span></li>
+  </ul>
+</div>
+
+<ul class="weekdays">
+  <li>Mo</li>
+  <li>Tu</li>
+  <li>We</li>
+  <li>Th</li>
+  <li>Fr</li>
+  <li>Sa</li>
+  <li>Su</li>
+</ul>
+
+<ul class="days">
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  <li>6</li>
+  <li>7</li>
+  <li>8</li>
+  <li>9</li>
+  <li><span class="active">10</span></li>
+  <li>11</li>
+  <li>12</li>
+  <li>13</li>
+  <li>14</li>
+  <li>15</li>
+  <li>16</li>
+  <li>17</li>
+  <li>18</li>
+  <li>19</li>
+  <li>20</li>
+  <li>21</li>
+  <li>22</li>
+  <li>23</li>
+  <li>24</li>
+  <li>25</li>
+  <li>26</li>
+  <li>27</li>
+  <li>28</li>
+  <li>29</li>
+  <li>30</li>
+  <li>31</li>
+
+</ul>
+
+</div>
+
+
+
+  <div class="choice-of-fantasy">
+    <%= simple_form_for @stripper do |f| %>
+      <%= f.input :characters, collection:  [ "Policeman", "Firefighter", "Delivery guy","Motz Salesman","Soldier","Professor","Bowling Instructor","Construction Worker", "Santa", "Cab Driver", "Waiter"], prompt: "Cowboy" %>
+         <%= simple_form_for [@stripper, @booking] do |f| %>
+        <%= f.input :starts_at, label: "Duration", collection: ["1.5h", "2h", "2.5h", "3h"], prompt: "1h" %>
+        <% end %>
+        Total price for "X" hours :
+        €<%= 3 * @stripper.price %>
+        <p></p>
+        <%= f.button :submit, "Confirm", class: "btn btn-danger" %>
+        <% end %>
+  </div>
+
+
+<p></p>
+
+
+<div class="costs">
+ <h4>
+
+
+ </h4>
+
+</div>
+</div>
+
+
+
+  </div>
+

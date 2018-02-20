@@ -8,7 +8,7 @@ class BookingsController < ApplicationController
 
   def show
     find_booking
-    @stripper = Stripper.find(parmas[:user_id])
+    @stripper = Stripper.find(parmas[:stripper_id])
     @booking.stripper = @stripper
   end
 
@@ -21,8 +21,9 @@ class BookingsController < ApplicationController
     @stripper = Stripper.find(parmas[:stripper_id])
     @booking = Booking.new(booking_params)
     @booking.stripper = @stripper
+    @booking.user = current_user
     if @booking.save
-      redirect_to bookings_path(@booking) #since we don't have a users-controller redirect_to the @booking page?
+      redirect_to strippers_path(@stripper) #since we don't have a users-controller redirect_to the @booking page?
     end
   end
 

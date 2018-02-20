@@ -1,7 +1,7 @@
 class AddColumnsToStrippers < ActiveRecord::Migration[5.1]
   def change
     add_column :strippers, :name, :string
-    add_column :strippers, :review, :integer
+    add_column :strippers, :review, :float
     add_column :strippers, :city, :string
     add_column :strippers, :price, :integer
     add_column :strippers, :height, :integer

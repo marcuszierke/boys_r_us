@@ -10,7 +10,8 @@ c = 1
   hair_color = ['brown', 'black', 'blond', 'white', 'light-brown', 'dark-brown', 'dark-blond', 'ginger'].sample
   eye_color = %W(green blue green-grey blue-grey hazel brown).sample
   age = (18..65).to_a.sample
-  Stripper.create(name: name, price: price, review: review, description: description, city: city, height: height, hair_color: hair_color, eye_color: eye_color, age: age)
+  email = Faker::Internet.email
+  Stripper.create(password: "password", email: email, name: name, price: price, review: review, description: description, city: city, height: height, hair_color: hair_color, eye_color: eye_color, age: age)
   p "worked, number #{c}"
   c += 1;
 end

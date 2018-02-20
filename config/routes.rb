@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-  resources :strippers, only: [:index, :show, :update, :edit]
-  resources :strippers do
+  resources :strippers, only: [:index, :show, :update, :edit] do
     resources :bookings, only: [ :new, :create, :destroy, :show, :index ]
   end
   

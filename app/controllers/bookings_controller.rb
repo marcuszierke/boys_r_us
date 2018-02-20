@@ -1,5 +1,5 @@
 class BookingsController < ApplicationController
-
+  skip_before_action :authenticate_user!, only: [:index, :show, :new]
   def index
     @stripper = Stripper.find(parmas[:stripper_id]) #how do we involve the user(_id) since we don't have a users-controller?
     @booking.stripper = @stripper    

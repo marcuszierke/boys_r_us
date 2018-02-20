@@ -6,8 +6,6 @@
     width: 1250px;
 }
 
-
-
 .logo-nav {
 
   background-color: #051a2a;
@@ -111,21 +109,23 @@ margin-top: 36px;
 
 .wrapper-profile {
   width: 99%;
-  height: calc(100% - 140px);
+  min-height: calc(100% - 140px);
   margin: 5px auto;
   background-color: white;
   display: flex;
 }
 
+.no-padding {
+  padding: 0;
+}
+
 .images {
   padding: 25px;
   box-sizing: border-box;
-  width: 40%;
+  width: 100%;
 }
 
 .image-large {
-
-  height: 300px;
   -webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
   -moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
   box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
@@ -133,7 +133,7 @@ margin-top: 36px;
 }
 
 .image-small {
-  width: 24%;
+  width: 25%;
   padding: 5px;
 
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
@@ -156,8 +156,9 @@ margin-top: 36px;
 .biography {
   padding: 30px;
   box-sizing: border-box;
-  width: 60%;
+  width: 100%;
 
+  min-height:100vh;
   position:relative;
   display:flex;
   flex-direction: column;

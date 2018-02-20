@@ -1,85 +1,87 @@
 <div class="wrapper-profile">
 
-  <div class="images">
-    <div class="text-center">
-      <%= image_tag(@stripper.pics1, width: 300, height: 400, crop: :fill, gravity: :face, class: "image-large") %>
-    </div>
-    <div class="image-collection text-center">
+  <div class="row">
+    <div class="col-xs-12 col-md-4 no-padding border-vertical">
+      <div class="images">
+        <div class="text-center">
+          <!-- cloudinary helper should be used -->
+          <%= image_tag(@stripper.pics1, width: 300, height: 300, crop: :fit, gravity: :face, class: "image-large") %>
+        </div>
+        <div class="image-collection text-center">
 
-      <%= image_tag(@stripper.pics2, class: "image-small") %>
-      <%= image_tag(@stripper.pics3, class: "image-small") %>
-      <%= image_tag(@stripper.pics4, class: "image-small") %>
+          <%= image_tag(@stripper.pics2, class: "image-small") %>
+          <%= image_tag(@stripper.pics3, class: "image-small") %>
+          <%= image_tag(@stripper.pics4, class: "image-small") %>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-md-8 no-padding">
+      <div class="biography">
+        <div class="name-price">
+          <div class="biography-name">
+            <h2><%= @stripper.name %></h2>
+          </div>
+          <div class="name-price">
+            <h2> <%= @stripper.price %> €/h</h2>
+          </div>
+        </div>
+        <div class="biography-infos">
+          <div class="biography-height">
+
+            <p><%= image_tag("height-icon.png", class: "image-tiny") %><%= @stripper.height %></p>
+          </div>
+          <div class="biography-eyecolor"><p><%= image_tag("eye-icon.png", class: "image-tiny") %><%= @stripper.eye_color %></p></div>
+          <div class="biography-haircolor"><p><%= image_tag("hair.png", class: "image-tiny") %><%= @stripper.hair_color %></p></div>
+          <div class="biography-ethnicity"><p><%= image_tag("ethnicity-icon.png", class: "image-tiny") %>caucasian</p></div>
+          <div class="biography-rating">
+            <% @stripper.review.times do %>
+            <i class="fas fa-star" style="color:#ff2f515c; font-size: 15px;"></i>
+            <% end %>
+            <% (5 - @stripper.review).times do %>
+            <i class="far fa-star" style="color:#ff2f515c; font-size: 15px;"></i>
+            <% end %>
+          </div>
+
+          </div>
+          <div class="biography-description">
+           <h4>Description:</h4>
+           <p><%= @stripper.description %></p>
+         </div>
+         <div class="biography-characters">
+           <h4>Services:</h4>
+           <div class="characters-wrapper">
+             <div class="characters">
+              <p><%= image_tag("policeman.png", class: "image-services") %>Policeman</p>
+              <p><%= image_tag("fireman.png", class: "image-services") %>Firefighter</p>
+              <p><%= image_tag("delivery.png", class: "image-services") %>Delivery guy</p>
+            </div>
+
+            <div class="characters">
+              <p><%= image_tag("motz.png", class: "image-services") %>Motz Salesman</p>
+              <p><%= image_tag("soldier.png", class: "image-services") %>Soldier</p>
+              <p><%= image_tag("professor.png", class: "image-services") %>Professor</p>
+            </div>
+            <div class="characters">
+              <p><%= image_tag("cowboy.png", class: "image-services") %>Cowboy</p>
+              <p><%= image_tag("worker.png", class: "image-services") %>Construction Worker</p>
+              <p><%= image_tag("santa.png", class: "image-services") %>Santa</p>
+            </div>
+
+            <div class="characters">
+              <p><%= image_tag("cabdriver.png", class: "image-services") %>Cab Driver</p>
+              <p><%= image_tag("waiter.png", class: "image-services") %>Waiter</p>
+              <p><%= image_tag("bowling.png", class: "image-services") %>Bowling Instructor</p>
+            </div>
+
+          </div>
+        </div>
+        <div class="btn-container">
+
+          <%= link_to "Book now", new_stripper_booking_path(@stripper), class: "btn btn-primary btn-lg profile" %>
+
+        </div>
+      </div>
     </div>
   </div>
-  <div class="border-vertical">
-
-  </div>
-
-  <div class="biography">
-    <div class="name-price">
-      <div class="biography-name">
-        <h2><%= @stripper.name %></h2>
-      </div>
-      <div class="name-price">
-        <h2> <%= @stripper.price %> €/h</h2>
-      </div>
-    </div>
-    <div class="biography-infos">
-      <div class="biography-height">
-
-        <p><%= image_tag("height-icon.png", class: "image-tiny") %><%= @stripper.height %></p>
-      </div>
-      <div class="biography-eyecolor"><p><%= image_tag("eye-icon.png", class: "image-tiny") %><%= @stripper.eye_color %></p></div>
-      <div class="biography-haircolor"><p><%= image_tag("hair.png", class: "image-tiny") %><%= @stripper.hair_color %></p></div>
-      <div class="biography-ethnicity"><p><%= image_tag("ethnicity-icon.png", class: "image-tiny") %>caucasian</p></div>
-      <div class="biography-rating">
-        <% @stripper.review.times do %>
-        <i class="fas fa-star" style="color:#ff2f515c; font-size: 15px;"></i>
-        <% end %>
-        <% (5 - @stripper.review).times do %>
-        <i class="far fa-star" style="color:#ff2f515c; font-size: 15px;"></i>
-        <% end %>
-      </div>
-
-      </div>
-      <div class="biography-description">
-       <h4>Description:</h4>
-       <p><%= @stripper.description %></p>
-     </div>
-     <div class="biography-characters">
-       <h4>Services:</h4>
-       <div class="characters-wrapper">
-         <div class="characters">
-          <p><%= image_tag("policeman.png", class: "image-services") %>Policeman</p>
-          <p><%= image_tag("fireman.png", class: "image-services") %>Firefighter</p>
-          <p><%= image_tag("delivery.png", class: "image-services") %>Delivery guy</p>
-        </div>
-
-        <div class="characters">
-          <p><%= image_tag("motz.png", class: "image-services") %>Motz Salesman</p>
-          <p><%= image_tag("soldier.png", class: "image-services") %>Soldier</p>
-          <p><%= image_tag("professor.png", class: "image-services") %>Professor</p>
-        </div>
-        <div class="characters">
-          <p><%= image_tag("cowboy.png", class: "image-services") %>Cowboy</p>
-          <p><%= image_tag("worker.png", class: "image-services") %>Construction Worker</p>
-          <p><%= image_tag("santa.png", class: "image-services") %>Santa</p>
-        </div>
-
-        <div class="characters">
-          <p><%= image_tag("cabdriver.png", class: "image-services") %>Cab Driver</p>
-          <p><%= image_tag("waiter.png", class: "image-services") %>Waiter</p>
-          <p><%= image_tag("bowling.png", class: "image-services") %>Bowling Instructor</p>
-        </div>
-
-      </div>
-    </div>
-    <div class="btn-container">
-
-      <%= link_to "Book now", new_stripper_booking_path(@stripper), class: "btn btn-primary btn-lg profile" %>
-
-    </div>
-
-  </div>
-
 </div>

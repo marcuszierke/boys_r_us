@@ -32,9 +32,15 @@
       <div class="biography-eyecolor"><p><%= image_tag("eye-icon.png", class: "image-tiny") %><%= @stripper.eye_color %></p></div>
       <div class="biography-haircolor"><p><%= image_tag("hair.png", class: "image-tiny") %><%= @stripper.hair_color %></p></div>
       <div class="biography-ethnicity"><p><%= image_tag("ethnicity-icon.png", class: "image-tiny") %>caucasian</p></div>
-      <div class="biography-rating"><% 5.times do %>
+      <div class="biography-rating">
+        <% @stripper.review.times do %>
         <i class="fas fa-star" style="color:#ff2f515c; font-size: 15px;"></i>
-        <% end %></div>
+        <% end %>
+        <% (5 - @stripper.review).times do %>
+        <i class="far fa-star" style="color:#ff2f515c; font-size: 15px;"></i>
+        <% end %>
+      </div>
+
       </div>
       <div class="biography-description">
        <h4>Description:</h4>

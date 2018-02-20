@@ -102,7 +102,7 @@ photos = [
   ['http://res.cloudinary.com/dncveixad/image/upload/v1519039757/kult_model_Julian_Weigl_145265.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519039746/kult_model_Julian_Weigl_147117.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519039742/kult_model_Julian_Weigl_145263.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519039736/kult_model_Julian_Weigl_145262.jpg']
 ]
 Stripper.destroy_all
-100.times do
+99.times do
   name = Faker::Superhero.name
   description = Faker::Lorem.paragraph(5)
   price = (55..294).to_a.sample
@@ -122,5 +122,15 @@ Stripper.destroy_all
   p "worked, number #{c}"
   c += 1;
 end
+
+p1 = 'http://res.cloudinary.com/dncveixad/image/upload/v1519039757/kult_model_Julian_Weigl_145265.jpg'
+p2 = 'http://res.cloudinary.com/dncveixad/image/upload/v1519039757/kult_model_Julian_Weigl_145265.jpg'
+p3 = 'http://res.cloudinary.com/dncveixad/image/upload/v1519039757/kult_model_Julian_Weigl_145265.jpg'
+p4 = 'http://res.cloudinary.com/dncveixad/image/upload/v1519039757/kult_model_Julian_Weigl_145265.jpg'
+
+Stripper.create(password: "password", email: "tuan@lewagon.com", name: "Tuan 'The Balls' Perera", price: 19, review: 5, description: "Must have experience - New York Times", city: "Bangcock", height: 181, hair_color: "dark-brown", eye_color: "brown", age: 48, pics1: p1, pics2: p2, pics3: p3, pics4: p4)
+
+
+
 
 # how to handle those parms: :ethnicity, :characters, :solo, :availability, :pics?

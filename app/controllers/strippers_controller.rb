@@ -26,3 +26,6 @@ class StrippersController < ApplicationController
     params.require(:strippers).permit(:name, :price, :review, :city, :height, :hair_color, :eye_color, :ethnicity, :characters, :solo, :availability, :pics, :age)
   end
 end
+
+
+# comment

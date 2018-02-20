@@ -1,15 +1,14 @@
 <div class="wrapper-profile">
 
   <div class="images">
-    <div class>
-      <%= image_tag("image.jpg", class: "image-large") %>
+    <div class="text-center">
+      <%= image_tag(@stripper.pics1, width: 300, height: 400, crop: :fill, gravity: :face) %>
     </div>
-    <div class="image-collection">
+    <div class="image-collection text-center">
 
-      <%= image_tag("image.jpg", class: "image-small") %>
-      <%= image_tag("image.jpg", class: "image-small") %>
-      <%= image_tag("image.jpg", class: "image-small") %>
-      <%= image_tag("image.jpg", class: "image-small") %>
+      <%= image_tag(@stripper.pics2, class: "image-small") %>
+      <%= image_tag(@stripper.pics3, class: "image-small") %>
+      <%= image_tag(@stripper.pics4, class: "image-small") %>
     </div>
   </div>
   <div class="border-vertical">

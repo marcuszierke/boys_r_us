@@ -1,57 +1,32 @@
-    <header class="logo-nav">
-      <figure class="logo-wrap"><a href="index.php" title="Back to home">
-<%= image_tag("logo-boys.png") %></a>  <p>Because you deserve it</p>
-      </figure>
-
-      <nav class="left-nav">
-        <p><i class="fas fa-caret-right"></i>
-
-<a href="dennett.php">Sign up</a></p>
-      </nav><!-- end left-nav -->
-
-      <nav class="right-nav">
-        <p><i class="fas fa-caret-left"></i>
-
-<a href="van-gogh.php">Log in</a></p>
-      </nav><!-- end right-nav -->
-
-    </header>
-
-
-<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url( '<%= image_path "TuanStripper.jpg" %>');">
-  <div class="banner-content">
-
-  </div>
-</div>
 <div class="container">
   <div class="row">
-      <h2><%  @strippers.each do |stripper| %></h2>
-      <a  href=<%= stripper_path(stripper) %>>
+    <h2><%  @strippers.each do |stripper| %></h2>
+    <a  href=<%= stripper_path(stripper) %>>
       <div class="col-xs-12 col-sm-4">
         <div id="parent" class="card" style="background-image: linear-gradient(345deg, rgba(12, 51, 93, 0.77) 0%, rgba(0,36,61,0.2) 62%), url( '<%= image_path "head.jpg" %>');">
-          <div id="popup" class="card-description"><h2><%= stripper.description%></h2> <p></p> </div>
+          <div id="popup" class="card-description"><h2><span> <%= stripper.description%></span></h2> <p></p> </div>
           <div class="card-category">
-           <h4><%= stripper.name %></h3>
-          </div>
-          <div class="card-footer">
+           <h4><span><%= stripper.name %></span></h3>
+           </div>
+           <div class="card-footer">
             <h4 class=“details-inner”>
-               <% empty_star = 5 - stripper.review %>
-               <% stripper.review.times do %>
-                 <i class="fas fa-star" style="color:yellow;"></i>
-               <% end %>
-               <% empty_star.times do %>
-                 <i class="far fa-star"></i>
-               <% end %>
-             </h4>
-            <div class="stripper-price">
-              <p>
-                €<%= stripper.price %>/h
-              </p>
-            </div>
+             <% empty_star = 5 - stripper.review %>
+             <% stripper.review.times do %>
+             <i class="fas fa-star" style="color:yellow;"></i>
+             <% end %>
+             <% empty_star.times do %>
+             <i class="far fa-star"></i>
+             <% end %>
+           </h4>
+           <div class="stripper-price">
+            <p>
+              €<%= stripper.price %>/h
+            </p>
           </div>
         </div>
       </div>
-      <%end%>
-      </a>
-  </div>
+    </div>
+    <%end%>
+  </a>
+</div>
 </div>

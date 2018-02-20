@@ -1,4 +1,13 @@
 // Specific CSS for your home-pagetest
+
+.container {
+      margin: 10px auto;
+
+    width: 1250px;
+}
+
+
+
 .logo-nav {
 
   background-color: #051a2a;
@@ -28,6 +37,7 @@ opacity: 1;
 
 img {
   height: 80px;
+  margin-top: 3px;
 }
 
 p {
@@ -54,8 +64,8 @@ float: left;
 display: inline;
 overflow: hidden;
 width: 340px;
-margin-top: 25px;
-    border-bottom: 1px solid #ffffff2e;
+margin-top: 36px;
+
 }
 
 .left-nav {
@@ -65,16 +75,36 @@ margin-top: 25px;
   }
 }
 
-.right-nav {
-float: right;
-    margin-right: 60px;
-a {
-  margin-left: 10px;
-  }
+.sign-in-btn {
+
+    position: absolute;
+    top: 22px;
+    width: 153px;
+    right: 44px;
+    background-color: #fc2161;
+    padding: 5px;
+  text-align:center;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    font-weight: lighter;
 }
 
-.right-nav p {
-text-align: right; }
+
+.sign-up-btn {
+
+    position: absolute;
+    width: 153px;
+    top: 65px;
+    right: 44px;
+    background-color: #ec8ba759;;
+    padding: 5px;
+  text-align:center;
+  font-size:13px;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    font-weight: lighter;
+}
+
 
 
 
@@ -220,6 +250,7 @@ html, body {
   height: 100%;
   width: 100%;
   margin: 0;
+  background-color: #183854;
 }
 
 

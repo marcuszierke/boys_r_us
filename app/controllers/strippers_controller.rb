@@ -16,12 +16,29 @@ class StrippersController < ApplicationController
   end
 
   def edit
-    @stripper = Stripper.find(params[:id])    
+    @stripper = Stripper.find(params[:id])
   end
 
   private
 
   def set_params
-    params.require(:strippers).permit(:name, :price, :review, :city, :height, :hair_color, :eye_color, :ethnicity, :characters, :solo, :availability, :pics, :age)
+    params.require(:strippers).permit(
+      :name,
+      :price,
+      :review,
+      :city,
+      :height,
+      :hair_color,
+      :eye_color,
+      :ethnicity,
+      :characters,
+      :solo,
+      :availability,
+      :age,
+      :pics1,
+      :pics2,
+      :pics3,
+      :pics4
+      )
   end
 end

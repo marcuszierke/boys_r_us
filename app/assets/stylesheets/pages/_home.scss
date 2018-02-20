@@ -1,4 +1,112 @@
-// Specific CSS for your home-page
+// Specific CSS for your home-pagetest
+
+.container {
+      margin: 10px auto;
+
+    width: 1250px;
+}
+
+
+
+.logo-nav {
+
+  background-color: #051a2a;
+  height: 112px;
+  position: relative;
+
+  a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1px;
+  }
+
+  i {
+    color: white;
+  }
+
+}
+
+.left-nav p a:hover, .left-nav p a:active, .right-nav p a:hover, .right-nav p a:active {
+color: #fff;
+opacity: 0.6 }
+
+.logo-wrap {
+position: absolute;
+left: 521px;
+opacity: 1;
+
+img {
+  height: 80px;
+  margin-top: 3px;
+}
+
+p {
+  color: white;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    opacity: 0.7;
+    font-style: italic;
+    margin-left: 56px;
+    margin-top: 3px;
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+}
+
+#internal .logo-wrap  {
+top: 0px; }
+
+.logo-wrap a:hover {
+opacity: 0.7; }
+
+.left-nav, .right-nav {
+float: left;
+display: inline;
+overflow: hidden;
+width: 340px;
+margin-top: 36px;
+
+}
+
+.left-nav {
+  margin-left: 60px;
+  i {
+    margin-right: 10px;
+  }
+}
+
+.sign-in-btn {
+
+    position: absolute;
+    top: 22px;
+    width: 153px;
+    right: 44px;
+    background-color: #fc2161;
+    padding: 5px;
+  text-align:center;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    font-weight: lighter;
+}
+
+
+.sign-up-btn {
+
+    position: absolute;
+    width: 153px;
+    top: 65px;
+    right: 44px;
+    background-color: #ec8ba759;;
+    padding: 5px;
+  text-align:center;
+  font-size:13px;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    font-weight: lighter;
+}
+
+
+
 
 
 .wrapper-profile {
@@ -141,6 +249,7 @@ html, body {
   height: 100%;
   width: 100%;
   margin: 0;
+  background-color: #183854;
 }
 
 

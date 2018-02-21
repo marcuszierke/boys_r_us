@@ -111,6 +111,52 @@ margin-top: 36px;
   display: flex;
 }
 
+.wrapper-profile-show-booking {
+  width: 99%;
+  min-height: calc(100% - 140px);
+  margin: 5px auto;
+  background-color: white;
+  padding: 20px;
+  position: relative;
+
+  h1 {
+    font-size: 40px;
+        color: #6464a9;
+  }
+  h3 {
+    font-size: 24px;
+    margin-left: 40px;
+
+  }
+
+  span {
+    font-size: 24px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    margin-left: 10px;
+  }
+
+
+}
+
+
+
+.stripper-booking-show {
+  position: absolute;
+  right: 30px;
+  top: 60px;
+
+
+
+
+}
+
+#map {
+  position: absolute;
+  left: 400px;
+  bottom: 50px;
+}
+
 .no-padding {
   padding: 0;
 }

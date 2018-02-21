@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180221105237) do
+ActiveRecord::Schema.define(version: 20180221150337) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 20180221105237) do
     t.string "character"
     t.float "latitude"
     t.float "longitude"
-    t.date "date"
+    t.string "date"
     t.integer "duration"
     t.string "address"
     t.index ["stripper_id"], name: "index_bookings_on_stripper_id"

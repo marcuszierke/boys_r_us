@@ -1,13 +1,13 @@
 class BookingsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show, :new]
+  before_action :find_booking, only: [ :destroy, :show]
+
   def index
-    @stripper = Stripper.find(params[:stripper_id]) #how do we involve the user(_id) since we don't have a users-controller?
-    @booking.stripper = @stripper
-    @bookings = Booking.all
+    @bookings = policy_scope(Booking)
+    @user = current_user
   end
 
   def show
-    find_booking
     @stripper = Stripper.find(params[:stripper_id])
     @booking.stripper = @stripper
   end
@@ -15,6 +15,7 @@ class BookingsController < ApplicationController
   def new
     @stripper = Stripper.find(params[:stripper_id])
     @booking = Booking.new
+    authorize @booking
   end
 
   def create
@@ -29,7 +30,6 @@ class BookingsController < ApplicationController
 
 
   def destroy
-    find_booking
     @booking.destroy
     redirect_to strippers_path
   end
@@ -39,6 +39,7 @@ class BookingsController < ApplicationController
 
   def find_booking
     @booking = Booking.find(params[:id])
+    authorize @booking
   end
 
   def booking_params

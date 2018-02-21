@@ -33,7 +33,7 @@ class BookingsController < ApplicationController
     @booking.stripper = @stripper
     @booking.user = current_user
     if @booking.save
-      redirect_to strippers_path(@stripper) #since we don't have a users-controller redirect_to the @booking page?
+      redirect_to booking_path(@booking) #since we don't have a users-controller redirect_to the @booking page?
     end
     authorize @booking
   end
@@ -53,6 +53,6 @@ class BookingsController < ApplicationController
   end
 
   def booking_params
-    params.require(:booking).permit(:user_id, :stripper_id, :duration, :date, :character)
+    params.require(:booking).permit(:user_id, :stripper_id, :duration, :date, :character, :address)
   end
 end

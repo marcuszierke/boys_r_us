@@ -5,7 +5,7 @@
 
   <h3>Your playboy: <span class="details-show-booking"><%= @booking.stripper.name %></span> </h3>
   <h3>Why you chose him: <span class="details-show-booking"><%= @booking.stripper.description.split("*")[0] %></span> </h3>
-  <h3>The total price you will pay: <span class="details-show-booking">€<%= @booking.total_price * @booking.duration %></span> </h3>
+  <h3>The total price you will pay: <span class="details-show-booking">€<%= @booking.stripper.price * @booking.duration %></span> </h3>
   <br>
   <br>
   <br>

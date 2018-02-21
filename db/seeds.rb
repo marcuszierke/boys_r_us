@@ -154,17 +154,17 @@ p4 = 'http://res.cloudinary.com/dncveixad/image/upload/v1519039757/kult_model_Ju
 
 Stripper.create(password: "password", email: "tuan@lewagon.com", name: "The Penetrator",
   ethnicity: "oceanic", characters: "motz prof cowboy santa cab waiter bowling",price: 69, review: 5,
-  description: "Must have experience - New York Times*I am a dynamic figure, often seen scaling walls and crushing ice. I have been known to remodel train stations on my lunch breaks, making them more efficient in the area of heat retention. I translate ethnic slurs for Cuban refugees, I write award-winning operas, I manage time efficiently. Occasionally, I tread water for three days in a row.
+  description: "Do you believe in love at first sight or shall I walk by again?*I translate ethnic slurs for Cuban refugees, I manage time efficiently. Occasionally, I tread water for three days in a row.
 
-I woo women with my sensuous and godlike bagpipe playing, I can cook Thirty-Minute Brownies in twenty minutes. I am an expert in stucco, a veteran in love, and an outlaw in Peru.
+I woo women with my sensuous and godlike bagpipe playing, I can cook Thirty-Minute Brownies in twenty minutes. I a veteran in love, and an outlaw in Peru.
 
-Using only a hoe and a large glass of water, I once single-handedly defended a small village in the Amazon Basin from a horde of ferocious army ants. I play bluegrass cello, I was scouted by the Mets, I am the subject of numerous documentaries. When I'm bored, I build large suspension bridges in my yard. I enjoy urban hang gliding. On Wednesdays, after work, I repair electrical appliances free of charge.
+Using only a hoe and a large glass of water, I once single-handedly defended a small village in the Amazon Basin from a horde of ferocious army ants. I play bluegrass cello, I was scouted by the Mets, I am the subject of numerous documentaries. When I'm bored, I build large suspension bridges in my yard. I enjoy urban hang gliding.
 
-I am an abstract artist, a concrete analyst, and a ruthless bookie. Critics worldwide swoon over my original line of corduroy evening wear. I don't perspire. I am a private citizen, yet I receive fan mail. Last summer I toured New Jersey with a traveling centrifugal-force demonstration. My deft floral arrangements have earned me fame in international botany circles.
+I don't perspire. Last summer I toured New Jersey with a traveling centrifugal-force demonstration. My deft floral arrangements have earned me fame in international botany circles.
 
-I can hurl tennis rackets at small moving objects with deadly accuracy. I once read Paradise Lost, Moby Dick, and David Copperfield in one day and still had time to refurbish an entire dining room that evening. I know the exact location of every food item in the supermarket. I have performed several covert operations for the CIA. I sleep once a week; when I do sleep, I sleep in a chair. While on vacation in Canada, I successfully negotiated with a group of terrorists who had seized a small bakery. The laws of physics do not apply to me.
+I can hurl tennis rackets at small moving objects with deadly accuracy. I know the exact location of every food item in the supermarket. I have performed several covert operations for the CIA. I sleep once a week; when I do sleep, I sleep in a chair. While on vacation in Canada, I successfully negotiated with a group of terrorists who had seized a small bakery. The laws of physics do not apply to me.
 
-I balance, I weave, I dodge, I frolic, and my bills are all paid. On weekends, to let off steam, I participate in full-contact origami. Years ago I discovered the meaning of life but forgot to write it down. I have made extraordinary four course meals using only a mouli and a toaster oven. I breed prizewinning clams. I have won bullfights in San Juan, cliff-diving competitions in Sri Lanka, and spelling bees at the Kremlin. I have played Hamlet, I have performed open-heart surgery, and I have spoken with Elvis.", city: "Bangcock", height: 181, hair_color: "dark-brown",
+On weekends, to let off steam, I participate in full-contact origami. Years ago I discovered the meaning of life but forgot to write it down. I breed prizewinning clams. I have won pillowfights in San Juan, skiing competitions in Sri Lanka, and spelling bees at the Kremlin. I have played Hamlet, I have performed open-heart surgery, and I have spoken with Elvis. Do you need any more reasons?", city: "Bangcock", height: 181, hair_color: "dark-brown",
   eye_color: "brown", age: 48, pics1: p1, pics2: p2, pics3: p3, pics4: p4)
 
 

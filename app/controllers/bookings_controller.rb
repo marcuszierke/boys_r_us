@@ -8,8 +8,17 @@ class BookingsController < ApplicationController
   end
 
   def show
-    @stripper = Stripper.find(params[:stripper_id])
-    @booking.stripper = @stripper
+
+
+    #for maps integration:
+
+    @markers =
+      [{
+        lat: @booking.latitude,
+        lng: @booking.longitude#,
+        # infoWindow: { content: render_to_string(partial: "/flats/map_box", locals: { flat: flat }) }
+      }]
+
   end
 
   def new
@@ -44,6 +53,6 @@ class BookingsController < ApplicationController
   end
 
   def booking_params
-    params.require(:bookings).permit(:user_id, :stripper_id, :starts_at, :ends_at)
+    params.require(:booking).permit(:user_id, :stripper_id, :duration, :date, :character)
   end
 end

@@ -10,6 +10,7 @@ gem 'rails', '5.1.5'
 gem 'redis'
 gem 'cloudinary'
 gem 'pundit'
+gem "geocoder"
 
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass'
@@ -19,7 +20,8 @@ gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
 gem 'faker'
-
+gem 'jquery-rails'
+gem 'bootstrap-datepicker-rails'
 group :development do
   gem 'web-console', '>= 3.3.0'
 end

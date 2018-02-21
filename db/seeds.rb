@@ -154,13 +154,14 @@ p4 = 'http://res.cloudinary.com/dncveixad/image/upload/v1519212897/Bildschirmfot
 
 Stripper.create(password: "password", email: "tuan@lewagon.com", name: "The Penetrator",
   ethnicity: "oceanic", characters: "motz prof cowboy santa cab waiter bowling",price: 69, review: 5,
-  description: "Do you believe in love at first sight or shall I walk by again?*I translate ethnic slurs for Cuban refugees. I woo women with my sensuous and godlike bagpipe playing. I am a veteran in love, and an outlaw in Peru. Using only a hoe and a large glass of water, I once single-handedly defended a small village in the Amazon Basin from a horde of ferocious army ants. I know the exact location of every food item in the supermarket. I have performed several covert operations for the CIA. I sleep once a week; when I do sleep, I sleep in a chair. While on vacation in Canada, I successfully negotiated with a group of terrorists who had seized a small bakery. The laws of physics do not apply to me. I have played Hamlet, I have performed open-heart surgery. Do you need any more reasons?", city: "Bangcock", height: 181, hair_color: "dark-brown",
-  eye_color: "brown", age: 48, pics1: 'http://res.cloudinary.com/dncveixad/image/upload/v1519213984/2CAAE4BE-19BD-4D29-92DE-A4890B32D66A.jpg', pics2: 'http://res.cloudinary.com/dncveixad/image/upload/v1519047762/MattG026.jpg', pics3: 'http://res.cloudinary.com/dncveixad/image/upload/v1519047762/MattG026.jpg', pics4: 'http://res.cloudinary.com/dncveixad/image/upload/v1519047762/MattG026.jpg')
+  description: "Do you believe in love at first sight or shall I walk by again?*I translate ethnic slurs for Cuban refugees. I woo women with my sensuous and godlike bagpipe playing. I am a veteran in love, and an outlaw in Peru. Using only a hoe and a large glass of water, I once single-handedly defended a small village in the Amazon Basin from a horde of ferocious army ants. I know the exact location of every food item in the supermarket. I have performed several covert operations for the CIA. I sleep once a week; when I do sleep, I sleep in a chair. While on vacation in Canada, I successfully negotiated with a group of terrorists who had seized a small bakery. The laws of physics do not apply to me. I have played Hamlet, I have performed open-heart surgery and I have been Mandelas consultant. Do you really need any more reasons?", city: "Bangcock", height: 181, hair_color: "dark-brown",
+  eye_color: "brown", age: 48, pics1: p1, pics2: p2, pics3: p3, pics4: p4)
 
 User.create(email: "tuan@lewagon.com", password: "password", avatar: p1, name: "Tuan Pererea")
 User.create(email: "julian@lewagon.com", password: "password", avatar: p2, name: "Julian Lovelace")
 User.create(email: "moritz@lewagon.com", password: "password", avatar: p3, name: "Moritz Motz")
 User.create(email: "marcus@lewagon.com", password: "password", avatar: p4, name: "Mickey Mahoney")
+
 
 
 

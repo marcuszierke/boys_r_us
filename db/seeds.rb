@@ -152,9 +152,9 @@ p2 = 'http://res.cloudinary.com/dncveixad/image/upload/v1519039757/kult_model_Ju
 p3 = 'http://res.cloudinary.com/dncveixad/image/upload/v1519039757/kult_model_Julian_Weigl_145265.jpg'
 p4 = 'http://res.cloudinary.com/dncveixad/image/upload/v1519039757/kult_model_Julian_Weigl_145265.jpg'
 
-Stripper.create(password: "password", email: "tuan@lewagon.com", name: "Tuan 'The Balls' Perera", 
-  ethnicity: "oceanic", characters: "motz prof cowboy santa cab waiter bowling",price: 19, review: 5, 
-  description: "Must have experience - New York Times", city: "Bangcock", height: 181, hair_color: "dark-brown", 
+Stripper.create(password: "password", email: "tuan@lewagon.com", name: "The Penetrator",
+  ethnicity: "oceanic", characters: "motz prof cowboy santa cab waiter bowling",price: 69, review: 5,
+  description: "Do you believe in love at first sight or shall I walk by again?*I translate ethnic slurs for Cuban refugees. I woo women with my sensuous and godlike bagpipe playing. I am a veteran in love, and an outlaw in Peru. Using only a hoe and a large glass of water, I once single-handedly defended a small village in the Amazon Basin from a horde of ferocious army ants. I know the exact location of every food item in the supermarket. I have performed several covert operations for the CIA. I sleep once a week; when I do sleep, I sleep in a chair. While on vacation in Canada, I successfully negotiated with a group of terrorists who had seized a small bakery. The laws of physics do not apply to me. I have played Hamlet, I have performed open-heart surgery. Do you need any more reasons?", city: "Bangcock", height: 181, hair_color: "dark-brown",
   eye_color: "brown", age: 48, pics1: p1, pics2: p2, pics3: p3, pics4: p4)
 
 

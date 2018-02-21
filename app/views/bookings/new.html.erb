@@ -37,7 +37,7 @@
 
   <div class="choice-of-fantasy">
     <%= simple_form_for [@stripper, @booking] do |f| %>
-      <%= f.input :characters, collection:  [ "Policeman", "Firefighter", "Delivery guy","Motz Salesman","Soldier","Professor","Bowling Instructor","Construction Worker", "Santa", "Cab Driver", "Waiter"], prompt: "Cowboy" %>
+      <%= f.input :character, collection:  [ "Policeman", "Firefighter", "Delivery guy","Motz Salesman","Soldier","Professor","Bowling Instructor","Construction Worker", "Santa", "Cab Driver", "Waiter"], prompt: "Cowboy" %>
         <%= f.input :starts_at, label: "Duration", collection: ["1.5h", "2h", "2.5h", "3h"], prompt: "1h" %>
 
         Total price for "X" hours :

@@ -8,8 +8,17 @@ class BookingsController < ApplicationController
   end
 
   def show
-    @stripper = Stripper.find(params[:stripper_id])
     @booking.stripper = @stripper
+
+    #for maps integration:
+
+    @markers =
+      {
+        lat: @booking.latitude,
+        lng: @booking.longitude#,
+        # infoWindow: { content: render_to_string(partial: "/flats/map_box", locals: { flat: flat }) }
+      }
+
   end
 
   def new

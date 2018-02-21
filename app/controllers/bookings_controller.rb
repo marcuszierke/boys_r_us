@@ -26,6 +26,7 @@ class BookingsController < ApplicationController
     if @booking.save
       redirect_to strippers_path(@stripper) #since we don't have a users-controller redirect_to the @booking page?
     end
+    authorize @booking
   end
 
 

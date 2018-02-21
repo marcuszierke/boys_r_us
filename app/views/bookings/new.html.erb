@@ -39,6 +39,7 @@
             <% end %>
           </div>
           </div>
+
           <div class="biography-description">
             <h3>Please Choose:</h3>
             <div class="simple-form-bookign">
@@ -46,12 +47,12 @@
             <%= f.input :character, collection:  [ "Policeman", "Firefighter", "Delivery guy","Motz Salesman","Soldier","Professor","Bowling Instructor","Construction Worker", "Santa", "Cab Driver", "Waiter","Cowboy"], prompt: "Choose your fantasy"  %>
             <%= f.input :date, label: "Date", as: :string, input_html: {class: " form-control", "data-provide" => "datepicker"}  %>
             <%= f.input :duration, label: "Duration (in hours)", collection: [1,2,3]  %>
-
             <%= f.input :address, label: "Address"  %>
             </div>
 
 
           </div>
+
           <div class="btn-container">
             <%= f.button :submit, "Confirm booking", class: "btn btn-primary btn-lg profile" %>
             <% end %>

@@ -1,5 +1,4 @@
 <div class="wrapper-profile">
-
   <div class="row">
     <div class="col-xs-12 col-md-4 no-padding border-vertical">
       <div class="images">
@@ -8,14 +7,12 @@
           <%= cl_image_tag(@stripper.pics1, width: 330, crop: :fill, class: "image-large") %>
         </div>
         <div class="image-collection text-center">
-
           <%= image_tag(@stripper.pics2, class: "image-small") %>
           <%= image_tag(@stripper.pics3, class: "image-small") %>
           <%= image_tag(@stripper.pics4, class: "image-small") %>
         </div>
       </div>
     </div>
-
     <div class="col-xs-12 col-md-8 no-padding">
       <div class="biography">
         <div class="name-price">
@@ -28,7 +25,6 @@
         </div>
         <div id="biography-infos-booking" class="biography-infos">
           <div  class="biography-height">
-
             <p><%= image_tag("height-icon.png", class: "image-tiny") %><%= @stripper.height %></p>
           </div>
           <div class="biography-eyecolor"><p><%= image_tag("eye-icon.png", class: "image-tiny") %><%= @stripper.eye_color %></p></div>
@@ -42,77 +38,20 @@
             <i class="far fa-star" style="color:#ff2f515c; font-size: 15px;"></i>
             <% end %>
           </div>
-
           </div>
-
-
           <div id="simple-form-booking" class="biography-description">
               <h3>Please Choose:</h3>
             <%= simple_form_for [@stripper, @booking],  html: { data: { data_provide: "datepicker" } } do |f| %>
-
             <%= f.input :character, collection:  [ "Policeman", "Firefighter", "Delivery guy","Motz Salesman","Soldier","Professor","Bowling Instructor","Construction Worker", "Santa", "Cab Driver", "Waiter"], prompt: "Cowboy" %>
-
             <%= f.input :date, label: "Date", as: :string, input_html: {class: " form-control", "data-provide" => "datepicker"}  %>
-
             <%= f.input :duration, label: "Duration (in hours)", collection: [1,2,3]  %>
-
             <%= f.input :address, label: "Address"  %>
-
         </div>
-
-
           <div class="btn-container">
-
             <%= f.button :submit, "Confirm booking", class: "btn btn-primary btn-lg profile" %>
             <% end %>
-
           </div>
-
-
       </div>
     </div>
   </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -152,9 +152,19 @@ p2 = 'http://res.cloudinary.com/dncveixad/image/upload/v1519039757/kult_model_Ju
 p3 = 'http://res.cloudinary.com/dncveixad/image/upload/v1519039757/kult_model_Julian_Weigl_145265.jpg'
 p4 = 'http://res.cloudinary.com/dncveixad/image/upload/v1519039757/kult_model_Julian_Weigl_145265.jpg'
 
-Stripper.create(password: "password", email: "tuan@lewagon.com", name: "Tuan 'The Balls' Perera", 
-  ethnicity: "oceanic", characters: "motz prof cowboy santa cab waiter bowling",price: 19, review: 5, 
-  description: "Must have experience - New York Times", city: "Bangcock", height: 181, hair_color: "dark-brown", 
+Stripper.create(password: "password", email: "tuan@lewagon.com", name: "The Penetrator",
+  ethnicity: "oceanic", characters: "motz prof cowboy santa cab waiter bowling",price: 69, review: 5,
+  description: "Do you believe in love at first sight or shall I walk by again?*I translate ethnic slurs for Cuban refugees, I manage time efficiently. Occasionally, I tread water for three days in a row.
+
+I woo women with my sensuous and godlike bagpipe playing, I can cook Thirty-Minute Brownies in twenty minutes. I a veteran in love, and an outlaw in Peru.
+
+Using only a hoe and a large glass of water, I once single-handedly defended a small village in the Amazon Basin from a horde of ferocious army ants. I play bluegrass cello, I was scouted by the Mets, I am the subject of numerous documentaries. When I'm bored, I build large suspension bridges in my yard. I enjoy urban hang gliding.
+
+I don't perspire. Last summer I toured New Jersey with a traveling centrifugal-force demonstration. My deft floral arrangements have earned me fame in international botany circles.
+
+I can hurl tennis rackets at small moving objects with deadly accuracy. I know the exact location of every food item in the supermarket. I have performed several covert operations for the CIA. I sleep once a week; when I do sleep, I sleep in a chair. While on vacation in Canada, I successfully negotiated with a group of terrorists who had seized a small bakery. The laws of physics do not apply to me.
+
+On weekends, to let off steam, I participate in full-contact origami. Years ago I discovered the meaning of life but forgot to write it down. I breed prizewinning clams. I have won pillowfights in San Juan, skiing competitions in Sri Lanka, and spelling bees at the Kremlin. I have played Hamlet, I have performed open-heart surgery, and I have spoken with Elvis. Do you need any more reasons?", city: "Bangcock", height: 181, hair_color: "dark-brown",
   eye_color: "brown", age: 48, pics1: p1, pics2: p2, pics3: p3, pics4: p4)
 
 

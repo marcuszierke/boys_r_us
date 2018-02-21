@@ -1,2 +1,2 @@
 import "bootstrap";
-import "pickadate";
+import "pikaday";

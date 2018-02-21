@@ -32,15 +32,19 @@
     </div>
   </div>
 
-  <input type="text" data-provide="datepicker" class="form-control">
 
 
   <div class="choice-of-fantasy">
-    <%= simple_form_for [@stripper, @booking] do |f| %>
-      <%= f.input :character, collection:  [ "Policeman", "Firefighter", "Delivery guy","Motz Salesman","Soldier","Professor","Bowling Instructor","Construction Worker", "Santa", "Cab Driver", "Waiter"], prompt: "Cowboy" %>
-        <%= f.input :starts_at, label: "Duration", collection: ["1.5h", "2h", "2.5h", "3h"], prompt: "1h" %>
+    <%= simple_form_for [@stripper, @booking],  html: { data: { data_provide: "datepicker" } } do |f| %>
 
-        Total price for "X" hours :
+      <%= f.input :character, collection:  [ "Policeman", "Firefighter", "Delivery guy","Motz Salesman","Soldier","Professor","Bowling Instructor","Construction Worker", "Santa", "Cab Driver", "Waiter"], prompt: "Cowboy" %>
+
+        <%= f.input :ends_at, label: "Date", as: :string, input_html: {class: " form-control", "data-provide" => "datepicker"}  %>
+
+        <%= f.input :starts_at, label: "Duration (in hours)", collection: [ 1,2,3]  %>
+
+
+        Total price for <%= @booking.starts_at.value %> hours :
         €<%= 3 * @stripper.price %>
         <p></p>
         <%= f.button :submit, "Confirm", class: "btn btn-danger" %>
@@ -63,4 +67,5 @@
 
 
   </div>
+
 

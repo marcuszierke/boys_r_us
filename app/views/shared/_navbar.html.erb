@@ -20,11 +20,12 @@
       <!-- Links when logged in -->
       <%= link_to "Home", strippers_path, class: "navbar-wagon-item navbar-wagon-link" %>
       <%= link_to "Bookings", bookings_path, class: "navbar-wagon-item navbar-wagon-link" %>
+      <div class="navbar-wagon-item navbar-wagon-link"><%= current_user.name %></div>
 
       <!-- Avatar with dropdown menu -->
       <div class="navbar-wagon-item">
         <div class="dropdown">
-          <%= image_tag "http://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
+          <%= image_tag current_user.avatar, class: "avatar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
           <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
 
             <li>

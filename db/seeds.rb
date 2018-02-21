@@ -39,6 +39,7 @@ photos = [
   ['http://res.cloudinary.com/dncveixad/image/upload/v1519056138/651788.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519056129/651793.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519056122/651797.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519056117/651802.jpg'],
   ['http://res.cloudinary.com/dncveixad/image/upload/v1519056098/639234.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519056093/639235.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519056087/543131.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519056075/543134.png'],
   ['http://res.cloudinary.com/dncveixad/image/upload/v1519056033/526372.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519056030/526371.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519056019/571485.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519056015/571480.jpg'],
+  ['http://res.cloudinary.com/dncveixad/image/upload/v1519213391/74_5ae8bc16-9882-41ee-bf03-71f8ba0c2bf6.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519213350/74_t_eca56663-bb08-49fe-ad72-d0f0c25eeac7.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519213172/Marcus_Zierke_by_Georg-Roske_2017_07_LowRes.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519213313/74_t_1c5ff79c-721b-4c91-8847-1f9078566547.jpg'],
   ['http://res.cloudinary.com/dncveixad/image/upload/v1519055980/rmgvethps6ojzy3sg8tu.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519055968/lybotwan8cswtkeosdpi.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519055965/xj1f1nnasibjzvxnn0ny.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519055960/sizofldwupqfccv6qfj3.jpg'],
   ['http://res.cloudinary.com/dncveixad/image/upload/v1519055943/sf28j9i0mtqjjr9naje4.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519055937/nrzy7yhzusw0rjo4s7yv.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519055931/bbehkcvjl5mtzbvfliaf.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519055927/t3buybjts8j9oy2k7suk.jpg'],
   ['http://res.cloudinary.com/dncveixad/image/upload/v1519055864/642608.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519055841/523136.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519055837/533789.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519055831/501328.jpg'],
@@ -54,7 +55,6 @@ photos = [
   ['http://res.cloudinary.com/dncveixad/image/upload/v1519050380/078.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519050370/Menswear-LR-8-1000x1359.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519050366/image006.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519050362/00018-1000x1310.jpg'],
   ['http://res.cloudinary.com/dncveixad/image/upload/v1519050333/SERDAR-KAYABALI-112-1000x1333.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519050324/SERDAR-KAYABALI-UPM17004-1000x1406.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519050318/SERDAR-KAYABALI-144-1000x1333.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519050313/SERDAR-KAYABALI-137-1000x1333.jpg'],
   ['http://res.cloudinary.com/dncveixad/image/upload/v1519050276/philippe-reynaud26.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519050260/philippe-reynaud21.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519050255/philippe-reynaud36.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519050250/philippe-reynaud20.jpg'],
-  ['http://res.cloudinary.com/dncveixad/image/upload/v1519050189/Test_Markus047.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519050181/marcus-zierke11-1000x1333.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519050175/marcus-zierke9-1000x1333.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519050162/Test_Markus022.jpg'],
   ['http://res.cloudinary.com/dncveixad/image/upload/v1519050091/Corey-Baptiste-SLIMI-4_URIVALDO_REWIND10_crop-1000x1333.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519050080/COREY-Neiman_Marcus_April_2016_Book_by_Alistair_Taylor-Young-2.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519050071/Corey-Baptiste-SLIMI-4_URIVALDO_REWIND7_1-1000x1333.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519050068/Corey-Baptiste-SLIMI-4_URIVALDO_REWIND3-1000x1333.jpg'],
   ['http://res.cloudinary.com/dncveixad/image/upload/v1519050004/1-71.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519049998/1-721.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519049993/ALIM-K-UPM16.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519049981/1-29.jpg'],
   ['http://res.cloudinary.com/dncveixad/image/upload/v1519049892/Screen_Shot_2018-02-19_at_15.17.58.png', 'http://res.cloudinary.com/dncveixad/image/upload/v1519049828/20170922_05295665_M.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519049822/20170922_05175028_M.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519049818/20171018_155843943_M.jpg'],
@@ -147,15 +147,20 @@ Stripper.destroy_all
   c += 1;
 end
 
-p1 = 'http://res.cloudinary.com/dncveixad/image/upload/v1519039757/kult_model_Julian_Weigl_145265.jpg'
-p2 = 'http://res.cloudinary.com/dncveixad/image/upload/v1519039757/kult_model_Julian_Weigl_145265.jpg'
-p3 = 'http://res.cloudinary.com/dncveixad/image/upload/v1519039757/kult_model_Julian_Weigl_145265.jpg'
-p4 = 'http://res.cloudinary.com/dncveixad/image/upload/v1519039757/kult_model_Julian_Weigl_145265.jpg'
+p1 = 'http://res.cloudinary.com/dncveixad/image/upload/v1519212712/Bildschirmfoto_2018-02-21_um_12.21.32.png'
+p2 = 'http://res.cloudinary.com/dncveixad/image/upload/v1519212712/Bildschirmfoto_2018-02-21_um_12.23.01.png'
+p3 = 'http://res.cloudinary.com/dncveixad/image/upload/v1519212712/Bildschirmfoto_2018-02-21_um_12.21.58.png'
+p4 = 'http://res.cloudinary.com/dncveixad/image/upload/v1519212897/Bildschirmfoto_2018-02-21_um_12.34.34.png'
 
 Stripper.create(password: "password", email: "tuan@lewagon.com", name: "The Penetrator",
   ethnicity: "oceanic", characters: "motz prof cowboy santa cab waiter bowling",price: 69, review: 5,
   description: "Do you believe in love at first sight or shall I walk by again?*I translate ethnic slurs for Cuban refugees. I woo women with my sensuous and godlike bagpipe playing. I am a veteran in love, and an outlaw in Peru. Using only a hoe and a large glass of water, I once single-handedly defended a small village in the Amazon Basin from a horde of ferocious army ants. I know the exact location of every food item in the supermarket. I have performed several covert operations for the CIA. I sleep once a week; when I do sleep, I sleep in a chair. While on vacation in Canada, I successfully negotiated with a group of terrorists who had seized a small bakery. The laws of physics do not apply to me. I have played Hamlet, I have performed open-heart surgery. Do you need any more reasons?", city: "Bangcock", height: 181, hair_color: "dark-brown",
-  eye_color: "brown", age: 48, pics1: p1, pics2: p2, pics3: p3, pics4: p4)
+  eye_color: "brown", age: 48, pics1: 'http://res.cloudinary.com/dncveixad/image/upload/v1519213984/2CAAE4BE-19BD-4D29-92DE-A4890B32D66A.jpg', pics2: 'http://res.cloudinary.com/dncveixad/image/upload/v1519047762/MattG026.jpg', pics3: 'http://res.cloudinary.com/dncveixad/image/upload/v1519047762/MattG026.jpg', pics4: 'http://res.cloudinary.com/dncveixad/image/upload/v1519047762/MattG026.jpg')
+
+User.create(email: "tuan@lewagon.com", password: "password", avatar: p1, name: "Tuan Pererea")
+User.create(email: "julian@lewagon.com", password: "password", avatar: p2, name: "Julian Lovelace")
+User.create(email: "moritz@lewagon.com", password: "password", avatar: p3, name: "Moritz Motz")
+User.create(email: "marcus@lewagon.com", password: "password", avatar: p4, name: "Mickey Mahoney")
 
 
 

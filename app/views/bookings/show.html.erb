@@ -1,1 +1,8 @@
-show.html.erb
+<%= @markers %>
+
+<div
+  id="map"
+  style="width: 400px;
+  height: 300px;"
+  data-markers="<%= @markers.to_json %>"
+></div>

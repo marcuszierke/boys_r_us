@@ -28,7 +28,7 @@
     </div>
     <p></p>
     <div id="ethnicity">
-      <%= image_tag("ethnicity-icon.png", class: "image-tiny") %><%= @stripper.ethnicity %> caucasian
+      <%= image_tag("ethnicity-icon.png", class: "image-tiny") %><%= @stripper.ethnicity %>
     </div>
   </div>
 
@@ -44,7 +44,7 @@
         <%= f.input :starts_at, label: "Duration (in hours)", collection: [ 1,2,3]  %>
 
 
-        Total price for <%= @booking.starts_at.value %> hours :
+        Total price for  hours :
         €<%= 3 * @stripper.price %>
         <p></p>
         <%= f.button :submit, "Confirm", class: "btn btn-danger" %>

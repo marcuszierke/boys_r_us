@@ -3,7 +3,7 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  width: 330px;
+  width: 550px;
   height: 42px;
   cursor: I-beam;
   top: 0;
@@ -13,7 +13,7 @@
   padding: 0 10px;
   overflow: hidden;
   border: none;
-  margin: 5px auto;
+  margin: 20px auto;
   -webkit-border-radius: 21px;
   border-radius:10px;
   color: rgba(140, 140, 140, 1);
@@ -28,7 +28,7 @@
 }
 
 .button:hover {
-  width:550px;
+  width:700px;
   opacity: 0.82;
   color: rgba(181, 181, 181, 1);
   background: rgba(0, 0, 0, 0.4);
@@ -40,7 +40,7 @@
 }
 
 .button:focus {
-  width: 490px;
+  width: 700px;
   cursor: default;
   padding: -13px 20px 0;
   color: rgba(255, 255, 255, 1);
@@ -55,7 +55,7 @@
   box-shadow: none;
 }
 .text-searchbar {
-  color: white;
+  color: rgba(255, 255, 255, 0.9);
   background: rgba(40, 40, 40, 0);
   border: 0;
   text-align: center;

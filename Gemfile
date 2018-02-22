@@ -11,7 +11,6 @@ gem 'redis'
 gem 'cloudinary'
 gem 'pundit'
 gem "geocoder"
-gem "algoliasearch-rails"
 
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass'

@@ -155,7 +155,37 @@ p4 = 'http://res.cloudinary.com/dncveixad/image/upload/v1519212897/Bildschirmfot
 Stripper.create(password: "password", email: "tuan@lewagon.com", name: "The Penetrator",
   ethnicity: "oceanic", characters: "motz prof cowboy santa cab waiter bowling",price: 69, review: 5,
   description: "Do you believe in love at first sight or shall I walk by again?*I translate ethnic slurs for Cuban refugees. I woo women with my sensuous and godlike bagpipe playing. I am a veteran in love, and an outlaw in Peru. Using only a hoe and a large glass of water, I once single-handedly defended a small village in the Amazon Basin from a horde of ferocious army ants. I know the exact location of every food item in the supermarket. I have performed several covert operations for the CIA. I sleep once a week; when I do sleep, I sleep in a chair. While on vacation in Canada, I successfully negotiated with a group of terrorists who had seized a small bakery. The laws of physics do not apply to me. I have played Hamlet, I have performed open-heart surgery and I have been Mandelas consultant. Do you really need any more reasons?", city: "Bangcock", height: 181, hair_color: "dark-brown",
-  eye_color: "brown", age: 48, pics1: 'http://res.cloudinary.com/dncveixad/image/upload/v1519213984/2CAAE4BE-19BD-4D29-92DE-A4890B32D66A.jpg', pics2: 'http://res.cloudinary.com/dncveixad/image/upload/v1519224833/Bildschirmfoto_2018-02-21_um_15.51.23.png', pics3: 'http://res.cloudinary.com/dncveixad/image/upload/v1519224833/Bildschirmfoto_2018-02-21_um_15.52.19.png', pics4: 'http://res.cloudinary.com/dncveixad/image/upload/v1519224833/Bildschirmfoto_2018-02-21_um_15.50.44.png')
+  eye_color: "brown", age: 48, pics1: 'http://res.cloudinary.com/dncveixad/image/upload/v1519213984/2CAAE4BE-19BD-4D29-92DE-A4890B32D66A.jpg', pics2: 'http://res.cloudinary.com/dncveixad/image/upload/v1519224833/Bildschirmfoto_2018-02-21_um_15.51.23.png', pics3: 'http://res.cloudinary.com/dncveixad/image/upload/v1519224833/Bildschirmfoto_2018-02-21_um_15.52.19.png', pics4: 'http://res.cloudinary.com/dncveixad/video/upload/v1519305869/Tuanito.mp4')
+
+Stripper.create(password: "password", email: "Vini@lewagon.com", name: "Gray Fox",
+  ethnicity: "asian", characters: "motz prof cowboy santa cab waiter bowling",price: 69, review: 5,
+  description: "I'm like pi baby, I'm really long and I go on forever.*", city: "Bangcock", height: 181, hair_color: "dark-brown",
+  eye_color: "brown", age: 18, pics1: 'http://res.cloudinary.com/dncveixad/image/upload/v1519293609/Screen_Shot_2018-02-22_at_10.56.40.png', pics2: 'http://res.cloudinary.com/dncveixad/image/upload/v1519295924/Screen_Shot_2018-02-22_at_10.57.43.png', pics3: 'http://res.cloudinary.com/dncveixad/image/upload/v1519293607/Screen_Shot_2018-02-22_at_10.58.52.png', pics4: 'http://res.cloudinary.com/dncveixad/image/upload/v1519293238/383.jpg')
+
+Stripper.create(password: "password", email: "anton@lewagon.com", name: "Biggus Diccus",
+  ethnicity: "white", characters: "motz prof cowboy santa cab waiter bowling",price: 69, review: 5,
+  description: "On a scale from 1 to 10, you're a 9...... And I'm the 1 you need.*", city: "Bangcock", height: 181, hair_color: "dark-brown",
+  eye_color: "brown", age: 60, pics1: 'http://res.cloudinary.com/dncveixad/image/upload/v1519294475/Screen_Shot_2018-02-22_at_11.13.41.png', pics2: 'http://res.cloudinary.com/dncveixad/image/upload/v1519294475/Screen_Shot_2018-02-22_at_11.13.52.png', pics3: 'http://res.cloudinary.com/dncveixad/image/upload/v1519295924/Screen_Shot_2018-02-22_at_11.13.25.png', pics4: 'http://res.cloudinary.com/dncveixad/image/upload/v1519294474/Screen_Shot_2018-02-22_at_11.13.16.png')
+
+Stripper.create(password: "password", email: "Konstantions@lewagon.com", name: "Daddy",
+  ethnicity: "White", characters: "motz prof cowboy santa cab waiter bowling",price: 69, review: 5,
+  description: "You can call me The Fireman....mainly because I turn the hoes on*", city: "Bangcock", height: 181, hair_color: "dark-brown",
+  eye_color: "brown", age: 18, pics1: 'http://res.cloudinary.com/dncveixad/image/upload/v1519294717/konstantinos-mitsainas-foto.1024x1024.jpg', pics2: 'http://res.cloudinary.com/dncveixad/image/upload/v1519295924/Screen_Shot_2018-02-22_at_11.01.01.png', pics3: 'http://res.cloudinary.com/dncveixad/image/upload/v1519295924/Screen_Shot_2018-02-22_at_11.01.01.png', pics4: 'http://res.cloudinary.com/dncveixad/image/upload/v1519295924/Screen_Shot_2018-02-22_at_11.01.01.png')
+
+Stripper.create(password: "password", email: "Rich@lewagon.com", name: "",
+  ethnicity: "asian", characters: "motz prof cowboy santa cab waiter bowling",price: 69, review: 5,
+  description: "Do you believe in love at first sight or shall I walk by again?*", city: "Bangcock", height: 181, hair_color: "dark-brown",
+  eye_color: "brown", age: 18, pics1: 'http://res.cloudinary.com/dncveixad/image/upload/v1519293980/Screen_Shot_2018-02-22_at_11.01.38.png', pics2: 'http://res.cloudinary.com/dncveixad/image/upload/v1519293981/Screen_Shot_2018-02-22_at_11.03.00.png', pics3: 'http://res.cloudinary.com/dncveixad/image/upload/v1519293981/Screen_Shot_2018-02-22_at_11.03.00.png', pics4: 'http://res.cloudinary.com/dncveixad/image/upload/v1519293981/Screen_Shot_2018-02-22_at_11.03.00.png')
+
+Stripper.create(password: "password", email: "vini@lewagon.com", name: "",
+  ethnicity: "asian", characters: "motz prof cowboy santa cab waiter bowling",price: 69, review: 5,
+  description: "Hey, wanna come over to Myspace and Twitter with my Yahoo till I Google all over your Facebook?*", city: "Bangcock", height: 181, hair_color: "dark-brown",
+  eye_color: "brown", age: 18, pics1: '', pics2: '', pics3: '', pics4: '')
+
+Stripper.create(password: "password", email: "vini@lewagon.com", name: "",
+  ethnicity: "asian", characters: "motz prof cowboy santa cab waiter bowling",price: 69, review: 5,
+  description: "Do you believe in love at first sight or shall I walk by again?*", city: "Bangcock", height: 181, hair_color: "dark-brown",
+  eye_color: "brown", age: 18, pics1: '', pics2: '', pics3: '', pics4: '')
 
 User.create(email: "tuan@lewagon.com", password: "password", avatar: p1, name: "Tuan Pererea")
 User.create(email: "julian@lewagon.com", password: "password", avatar: p2, name: "Julian Lovelace")

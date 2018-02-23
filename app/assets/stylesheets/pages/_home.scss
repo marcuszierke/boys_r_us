@@ -335,7 +335,6 @@ html, body {
 // =================== Booking Index ====================
 
 .wrapper-booking {
-
   padding:0;
   margin: 10px;
  background-size: cover;
@@ -362,6 +361,13 @@ html, body {
 .booking-image{
   margin-right: 30px;
   border: 1px solid #ebebeb;
+}
+.wrapper-no-bookings {
+  height: calc(100vh - 112px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
 
 .message-name {
@@ -410,12 +416,5 @@ html, body {
 
 .details-show-booking {
   line-height: 39px;
-}
-
-.warning {
-  color:white;
-  text-align:center;
-  width: 100%;
-  height: 100%;
 }
 // Specific CSS for your home-page

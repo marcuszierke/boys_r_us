@@ -147,6 +147,8 @@ Stripper.destroy_all
   c += 1;
 end
 
+review = (0..50).to_a.sample.to_f / 10
+
 p1 = 'http://res.cloudinary.com/dncveixad/image/upload/v1519212712/Bildschirmfoto_2018-02-21_um_12.21.32.png'
 p2 = 'http://res.cloudinary.com/dncveixad/image/upload/v1519212712/Bildschirmfoto_2018-02-21_um_12.23.01.png'
 p3 = 'http://res.cloudinary.com/dncveixad/image/upload/v1519212712/Bildschirmfoto_2018-02-21_um_12.21.58.png'
@@ -158,47 +160,47 @@ Stripper.create(password: "password", email: "tuan@lewagon.com", name: "The Pene
   eye_color: "brown", age: 48, pics1: 'http://res.cloudinary.com/dncveixad/image/upload/v1519213984/2CAAE4BE-19BD-4D29-92DE-A4890B32D66A.jpg', pics2: 'http://res.cloudinary.com/dncveixad/image/upload/v1519224833/Bildschirmfoto_2018-02-21_um_15.51.23.png', pics4: 'http://res.cloudinary.com/dncveixad/image/upload/v1519224833/Bildschirmfoto_2018-02-21_um_15.52.19.png', pics3: 'http://res.cloudinary.com/dncveixad/video/upload/v1519305869/Tuanito.mp4')
 
 Stripper.create(password: "password", email: "Vini@lewagon.com", name: "Gray Fox",
-  ethnicity: "asian", characters: "motz prof cowboy santa cab waiter bowling",price: 129, review: 5,
+  ethnicity: "asian", characters: "motz prof cowboy santa cab waiter bowling",price: 129, review: review,
   description: "I'm like pi baby, I'm really long and I go on forever.*A man of mystery and power, whose power is exceeded only by his mystery, Generally, the path of least resistance appeals. Also, I am excellent at parallel parking.", city: "Bangcock", height: 181, hair_color: "dark-brown",
   eye_color: "brown", age: 18, pics1: 'http://res.cloudinary.com/dncveixad/image/upload/v1519293609/Screen_Shot_2018-02-22_at_10.56.40.png', pics2: 'http://res.cloudinary.com/dncveixad/image/upload/v1519295924/Screen_Shot_2018-02-22_at_10.57.43.png', pics3: 'http://res.cloudinary.com/dncveixad/image/upload/v1519293607/Screen_Shot_2018-02-22_at_10.58.52.png', pics4: 'http://res.cloudinary.com/dncveixad/image/upload/v1519293238/383.jpg')
 Stripper.create(password: "password", email: "anton@lewagon.com", name: "Biggus Diccus",
-  ethnicity: "white", characters: "motz prof cowboy santa cab waiter bowling",price: 65, review: 5,
+  ethnicity: "white", characters: "motz prof cowboy santa cab waiter bowling",price: 65, review: review,
   description: "On a scale from 1 to 10, you're a 9...... And I'm the 1 you need.*Fabulous ends in “us” coincidence? I think not", city: "Bangcock", height: 181, hair_color: "dark-brown",
   eye_color: "brown", age: 60, pics1: 'http://res.cloudinary.com/dncveixad/image/upload/v1519294475/Screen_Shot_2018-02-22_at_11.13.41.png', pics2: 'http://res.cloudinary.com/dncveixad/image/upload/v1519294475/Screen_Shot_2018-02-22_at_11.13.52.png', pics3: 'http://res.cloudinary.com/dncveixad/image/upload/v1519295924/Screen_Shot_2018-02-22_at_11.13.25.png', pics4: 'http://res.cloudinary.com/dncveixad/image/upload/v1519294474/Screen_Shot_2018-02-22_at_11.13.16.png')
 Stripper.create(password: "password", email: "Konstantinos@lewagon.com", name: "Daddy",
-  ethnicity: "White", characters: "motz prof cowboy santa cab waiter bowling",price: 79, review: 5,
+  ethnicity: "White", characters: "motz prof cowboy santa cab waiter bowling",price: 79, review: review,
   description: "You can call me The Fireman....mainly because I turn the hoes on*Oh Hey, you like it dirty too?", city: "Bangcock", height: 181, hair_color: "dark-brown",
   eye_color: "brown", age: 18, pics1: 'http://res.cloudinary.com/dncveixad/image/upload/v1519308427/konstantinos-mitsainas-foto.1024x1024.jpg', pics2: 'http://res.cloudinary.com/dncveixad/image/upload/v1519295924/Screen_Shot_2018-02-22_at_11.01.01.png', pics3: 'http://res.cloudinary.com/dncveixad/image/upload/v1519295924/Screen_Shot_2018-02-22_at_11.01.01.png', pics4: 'http://res.cloudinary.com/dncveixad/image/upload/v1519295924/Screen_Shot_2018-02-22_at_11.01.01.png')
 Stripper.create(password: "password", email: "Rich@lewagon.com", name: "Helluva Booty Carter",
-  ethnicity: "asian", characters: "motz prof cowboy santa cab waiter bowling",price: 56, review: 5,
+  ethnicity: "asian", characters: "motz prof cowboy santa cab waiter bowling",price: 56, review: review,
   description: "Hey baby take my booty and lets be pirates.*I feel sorry for people who don‘t know me.", city: "Bangcock", height: 181, hair_color: "dark-brown",
   eye_color: "brown", age: 35, pics1: 'http://res.cloudinary.com/dncveixad/image/upload/v1519293980/Screen_Shot_2018-02-22_at_11.01.38.png', pics2: 'http://res.cloudinary.com/dncveixad/image/upload/v1519293981/Screen_Shot_2018-02-22_at_11.03.00.png', pics3: 'http://res.cloudinary.com/dncveixad/image/upload/v1519293981/Screen_Shot_2018-02-22_at_11.03.00.png', pics4: 'http://res.cloudinary.com/dncveixad/image/upload/v1519293981/Screen_Shot_2018-02-22_at_11.03.00.png')
 Stripper.create(password: "password", email: "Philipp@lewagon.com", name: "Thunder Nuts",
-  ethnicity: "asian", characters: "motz prof cowboy santa cab waiter bowling",price: 123, review: 5,
+  ethnicity: "asian", characters: "motz prof cowboy santa cab waiter bowling",price: 123, review: review,
   description: "Hey, wanna come over to Myspace and Twitter with my Yahoo till I Google all over your Facebook?*Everyone who knows me can be divided into two groups: those who like me and those who still don’t know me.", city: "Bangcock", height: 181, hair_color: "dark-brown",
   eye_color: "brown", age: 19, pics1: 'http://res.cloudinary.com/dncveixad/image/upload/v1519294145/Screen_Shot_2018-02-22_at_11.07.41.png', pics2: 'http://res.cloudinary.com/dncveixad/image/upload/v1519294145/Screen_Shot_2018-02-22_at_11.07.41.png', pics3: 'http://res.cloudinary.com/dncveixad/image/upload/v1519294145/Screen_Shot_2018-02-22_at_11.07.41.png', pics4: 'http://res.cloudinary.com/dncveixad/image/upload/v1519294145/Screen_Shot_2018-02-22_at_11.07.41.png')
 Stripper.create(password: "password", email: "Taka@lewagon.com", name: "Juana Bang",
-  ethnicity: "asian", characters: "motz prof cowboy santa cab waiter bowling",price: 969, review: 5,
+  ethnicity: "asian", characters: "motz prof cowboy santa cab waiter bowling",price: 969, review: review,
   description: "Would you like Gin and Platonic, or do you prefer Scotch and Sofa?*I never thought I had such an exciting life, before I heard what people talk about me.", city: "Bangcock", height: 181, hair_color: "dark-brown",
   eye_color: "brown", age: 45, pics1: 'http://res.cloudinary.com/dncveixad/image/upload/v1519293976/Screen_Shot_2018-02-22_at_11.05.00.png', pics2: 'http://res.cloudinary.com/dncveixad/image/upload/v1519293976/Screen_Shot_2018-02-22_at_11.05.00.png', pics3: 'http://res.cloudinary.com/dncveixad/image/upload/v1519293976/Screen_Shot_2018-02-22_at_11.05.00.png', pics4: 'http://res.cloudinary.com/dncveixad/image/upload/v1519293976/Screen_Shot_2018-02-22_at_11.05.00.png')
 
 Stripper.create(password: "password", email: "julz@lewagon.com", name: "Thunder Butt",
-  ethnicity: "caucasian", characters: "motz prof cowboy santa cab waiter bowling",price: 99, review: 3,
+  ethnicity: "caucasian", characters: "motz prof cowboy santa cab waiter bowling",price: 99, review: review,
   description: "Can I buy you a drink or do you just want the money?*You must have a p-value of at least 0.05, because I fail to reject you.", city: "Berlin", height: 184, hair_color: "brown",
   eye_color: "brown", age: 31, pics1: 'http://res.cloudinary.com/dncveixad/image/upload/v1519375327/update-pic.png', pics2: 'http://res.cloudinary.com/dncveixad/image/upload/v1519374515/IMG_7726.jpg', pics3: 'http://res.cloudinary.com/dncveixad/image/upload/v1519374515/IMG_5865.jpg', pics4: 'http://res.cloudinary.com/dncveixad/image/upload/v1519374515/IMG_5150.jpg')
 
 Stripper.create(password: "password", email: "martin@lewagon.com", name: "Lester the Molester",
-  ethnicity: "caucasian", characters: "motz prof cowboy santa cab waiter bowling",price: 99, review: 3,
+  ethnicity: "caucasian", characters: "motz prof cowboy santa cab waiter bowling",price: 99, review: review,
   description: "What is a nice girl like you doing in a dirty mind like mine?*Save water, shower with a friend!", city: "Berlin", height: 150, hair_color: "brown",
   eye_color: "brown", age: 90, pics1: 'http://res.cloudinary.com/dncveixad/image/upload/v1519379724/Screen_Shot_2018-02-23_at_10.50.02.png', pics2: 'http://res.cloudinary.com/dncveixad/image/upload/v1519379583/Screen_Shot_2018-02-23_at_10.50.15.png', pics3: 'http://res.cloudinary.com/dncveixad/image/upload/v1519379584/Screen_Shot_2018-02-23_at_10.50.27.png', pics4: 'http://res.cloudinary.com/dncveixad/image/upload/v1519379585/Screen_Shot_2018-02-23_at_10.50.42.png')
 
 Stripper.create(password: "password", email: "nicholas@lewagon.com", name: "Hugh Bulls",
-  ethnicity: "caucasian", characters: "motz prof cowboy santa cab waiter bowling",price: 99, review: 3,
+  ethnicity: "caucasian", characters: "motz prof cowboy santa cab waiter bowling",price: 99, review: review,
   description: "With my IQ and your body, we could make a race of superchildren!*See my friend over there? He wants to know if you think I’m cute.", city: "Berlin", height: 200, hair_color: "brown",
   eye_color: "brown", age: 18, pics1: 'http://res.cloudinary.com/dncveixad/image/upload/v1519379724/Screen_Shot_2018-02-23_at_10.52.04.png', pics2: 'http://res.cloudinary.com/dncveixad/image/upload/v1519379584/Screen_Shot_2018-02-23_at_10.52.14.png', pics3: 'http://res.cloudinary.com/dncveixad/image/upload/v1519379586/Screen_Shot_2018-02-23_at_10.52.25.png', pics4: 'http://res.cloudinary.com/dncveixad/image/upload/v1519379586/Screen_Shot_2018-02-23_at_10.52.25.png')
 
 Stripper.create(password: "password", email: "Moritz@lewagon.com", name: "Michael Dangelo",
-  ethnicity: "caucasian", characters: "motz prof cowboy santa cab waiter bowling",price: 99, review: 3,
+  ethnicity: "caucasian", characters: "motz prof cowboy santa cab waiter bowling",price: 99, review: review,
   description: "You make me wish I weren’t gay!*What has 36 teeth and holds back the Incredible Hulk? My zipper.", city: "Berlin", height: 200, hair_color: "brown",
   eye_color: "brown", age: 80, pics1: 'http://res.cloudinary.com/dncveixad/image/upload/v1519381195/moritz5.jpg', pics2: 'http://res.cloudinary.com/dncveixad/image/upload/v1519381195/moritz1.jpg', pics3: 'http://res.cloudinary.com/dncveixad/image/upload/v1519381195/moritz2.jpg', pics4: 'http://res.cloudinary.com/dncveixad/image/upload/v1519381195/moritz2.jpg')
 

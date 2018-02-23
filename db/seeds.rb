@@ -116,7 +116,7 @@ le_wagon_boys = [
   {password: "password", email: "anton@lewagon.com", name: "Biggus Diccus",
   ethnicity: "white", characters: characters.sample((0..12).to_a.sample).join(" "), price: 65, review: (0..5).to_a.sample,
   description: "On a scale from 1 to 10, you're a 9...... And I'm the 1 you need.*Fabulous ends in “us” coincidence? I think not", city: "Bangcock", height: 181, hair_color: "dark-brown",
-  eye_color: "brown", age: 60, pics1: 'http://res.cloudinary.com/dncveixad/image/upload/v1519294475/Screen_Shot_2018-02-22_at_11.13.41.png', pics2: 'http://res.cloudinary.com/dncveixad/image/upload/v1519294475/Screen_Shot_2018-02-22_at_11.13.52.png', pics3: 'http://res.cloudinary.com/dncveixad/image/upload/v1519295924/Screen_Shot_2018-02-22_at_11.13.25.png', pics4: 'http://res.cloudinary.com/dncveixad/image/upload/v1519294474/Screen_Shot_2018-02-22_at_11.13.16.png'},
+  eye_color: "brown", age: 60, pics1: 'http://res.cloudinary.com/dncveixad/image/upload/v1519383821/Bild_von_iOS_hochgeladen.jpg', pics2: 'http://res.cloudinary.com/dncveixad/image/upload/v1519294475/Screen_Shot_2018-02-22_at_11.13.52.png', pics3: 'http://res.cloudinary.com/dncveixad/image/upload/v1519295924/Screen_Shot_2018-02-22_at_11.13.25.png', pics4: 'http://res.cloudinary.com/dncveixad/image/upload/v1519294475/Screen_Shot_2018-02-22_at_11.13.41.png'},
 
   {password: "password", email: "Konstantinos@lewagon.com", name: "Daddy",
   ethnicity: "White", characters: characters.sample((0..12).to_a.sample).join(" "), price: 79, review: (0..5).to_a.sample,
@@ -128,9 +128,9 @@ le_wagon_boys = [
   description: "Hey baby take my booty and lets be pirates.*I feel sorry for people who don‘t know me.", city: "Bangcock", height: 181, hair_color: "dark-brown",
   eye_color: "brown", age: 35, pics1: 'http://res.cloudinary.com/dncveixad/image/upload/v1519293980/Screen_Shot_2018-02-22_at_11.01.38.png', pics2: 'http://res.cloudinary.com/dncveixad/image/upload/v1519293981/Screen_Shot_2018-02-22_at_11.03.00.png', pics3: 'http://res.cloudinary.com/dncveixad/image/upload/v1519293981/Screen_Shot_2018-02-22_at_11.03.00.png', pics4: 'http://res.cloudinary.com/dncveixad/image/upload/v1519293981/Screen_Shot_2018-02-22_at_11.03.00.png'},
 
-  {password: "password", email: "Philipp@lewagon.com", name: "Thunder Nuts",
-  ethnicity: "asian", characters: characters.sample((0..12).to_a.sample).join(" "), price: 123, review: (0..5).to_a.sample,
-  description: "Hey, wanna come over to Myspace and Twitter with my Yahoo till I Google all over your Facebook?*Everyone who knows me can be divided into two groups: those who like me and those who still don’t know me.", city: "Bangcock", height: 181, hair_color: "dark-brown",
+  {password: "password", email: "Philipp@lewagon.com", name: "Ben Dover",
+  ethnicity: "asian", characters: characters.sample((0..12).to_a.sample), price: 123, review: (0..5).to_a.sample,
+  description: "You must have a p-value of at least 0.05, because I fail to reject you.*Everyone who knows me can be divided into two groups: those who like me and those who still don’t know me.", city: "Bangcock", height: 181, hair_color: "dark-brown",
   eye_color: "brown", age: 19, pics1: 'http://res.cloudinary.com/dncveixad/image/upload/v1519294145/Screen_Shot_2018-02-22_at_11.07.41.png', pics2: 'http://res.cloudinary.com/dncveixad/image/upload/v1519294145/Screen_Shot_2018-02-22_at_11.07.41.png', pics3: 'http://res.cloudinary.com/dncveixad/image/upload/v1519294145/Screen_Shot_2018-02-22_at_11.07.41.png', pics4: 'http://res.cloudinary.com/dncveixad/image/upload/v1519294145/Screen_Shot_2018-02-22_at_11.07.41.png'},
 
   {password: "password", email: "tuan@lewagon.com", name: "The Penetrator",
@@ -188,7 +188,7 @@ name3 = %w(Tower Stick Horn Dong Butt Rustler Hood Rod Rider Pickle Head Bottom 
     d += 1
     c += 1
     p "custom stripper #{d}"
-  else  
+  else
     characters = ["Policeman", "Firefighter", "Delivery-Guy", "Motz-Salesman", "Soldier", "Professor", "Cowboy", "Construction-Worker", "Santa", "Cab-Driver", "Waiter", "Bowling-Instructor"]
     arr = []
     rounds = (5..12).to_a.sample

@@ -19,9 +19,7 @@ photos = [
   ['http://res.cloudinary.com/dncveixad/image/upload/v1519057170/526255.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519057163/304373.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519057159/524788.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519057155/nun6qtque0ergecqosjx.jpg'],
   ['http://res.cloudinary.com/dncveixad/image/upload/v1519057132/451354.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519057127/445796.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519057123/445794.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519057120/445799.jpg'],
   ['http://res.cloudinary.com/dncveixad/image/upload/v1519057090/539088.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519057085/539089.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519057076/539087.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519057069/127488.jpg'],
-  ['http://res.cloudinary.com/dncveixad/image/upload/v1519057044/gulhpubappjrvncl9xoi.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519057030/iou15ldbweqioyal3z5u.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519057025/ho0vlfflykszjnly6izj.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519057021/sybwjdssmxqhzrs8jd6z.jpg'],
   ['http://res.cloudinary.com/dncveixad/image/upload/v1519057003/531241.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519056995/66376.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519056990/66369.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519056986/221477.jpg'],
-  ['http://res.cloudinary.com/dncveixad/image/upload/v1519056958/zfcvetwrxyneutp11ad8.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519056954/609564.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519056951/609562.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519056947/ydo4innlp9raylq3c9jb.jpg'],
   ['http://res.cloudinary.com/dncveixad/image/upload/v1519056923/the7filg9b4v3uhhsphx.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519056919/tokvgz7dpfnubztpx5r5.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519056905/kcgfq6rtihmg6c27xp3u.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519056901/oahh1xr91r7wvg9ped6j.jpg'],
   ['http://res.cloudinary.com/dncveixad/image/upload/v1519056872/123382.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519056868/521189.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519056865/521187.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519056861/123387.jpg'],
   ['http://res.cloudinary.com/dncveixad/image/upload/v1519056835/648651.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519056832/648652.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519056828/566394.jpg', 'http://res.cloudinary.com/dncveixad/image/upload/v1519056821/495855.jpg'],
@@ -121,7 +119,7 @@ selection = selection[1..-1]
 Stripper.destroy_all
 
 50.times do
-  characters = %w(policeman firefighter delivery motz soldier prof cowboy worker santa cab waiter bowling)
+  characters = ["Policeman", "Firefighter", "Delivery-Guy", "Motz-Salesman", "Soldier", "Professor", "Cowboy", "Construction-Worker", "Santa", "Cab-Driver", "Waiter", "Bowling-Instructor"]
   arr = []
   rounds = (5..12).to_a.sample
   arr << characters.sample(rounds)
@@ -131,7 +129,7 @@ Stripper.destroy_all
   price = (55..294).to_a.sample
   review = (0..50).to_a.sample.to_f / 10
   ethnicity = %w(oceanic caucasian black asian latino).sample
-  city = %w(Berlin Barcelona Hamburg Sydney London Paris Madrid Cologne Frankfurt Rio).sample
+  city = %w(Berlin Barcelona New\ York Hamburg Sydney London Paris Madrid Cologne Frankfurt Rio\ de \Janeiro).sample
   height = (165..203).to_a.sample
   hair_color = ['brown', 'black', 'blond', 'white', 'light-brown', 'dark-brown', 'dark-blond', 'ginger'].sample
   eye_color = %W(green blue green-grey blue-grey hazel brown).sample
@@ -153,7 +151,7 @@ p3 = 'http://res.cloudinary.com/dncveixad/image/upload/v1519212712/Bildschirmfot
 p4 = 'http://res.cloudinary.com/dncveixad/image/upload/v1519212897/Bildschirmfoto_2018-02-21_um_12.34.34.png'
 
 Stripper.create(password: "password", email: "tuan@lewagon.com", name: "The Penetrator",
-  ethnicity: "oceanic", characters: "motz prof cowboy santa cab waiter bowling",price: 69, review: 5,
+  ethnicity: "oceanic", characters: "Motz-Salesman Professor Cowboy Santa Cab-Driver Waiter Bowling-Instructor",price: 69, review: 5,
   description: "Do you believe in love at first sight or shall I walk by again?*I translate ethnic slurs for Cuban refugees. I woo women with my sensuous and godlike bagpipe playing. I am a veteran in love, and an outlaw in Peru. Using only a hoe and a large glass of water, I once single-handedly defended a small village in the Amazon Basin from a horde of ferocious army ants. I know the exact location of every food item in the supermarket. I have performed several covert operations for the CIA. I sleep once a week; when I do sleep, I sleep in a chair. While on vacation in Canada, I successfully negotiated with a group of terrorists who had seized a small bakery. The laws of physics do not apply to me. I have played Hamlet, I have performed open-heart surgery and I have been Mandelas consultant. Do you really need any more reasons?", city: "Bangcock", height: 181, hair_color: "dark-brown",
   eye_color: "brown", age: 48, pics1: 'http://res.cloudinary.com/dncveixad/image/upload/v1519213984/2CAAE4BE-19BD-4D29-92DE-A4890B32D66A.jpg', pics2: 'http://res.cloudinary.com/dncveixad/image/upload/v1519224833/Bildschirmfoto_2018-02-21_um_15.51.23.png', pics4: 'http://res.cloudinary.com/dncveixad/image/upload/v1519224833/Bildschirmfoto_2018-02-21_um_15.52.19.png', pics3: 'http://res.cloudinary.com/dncveixad/video/upload/v1519305869/Tuanito.mp4')
 
@@ -187,6 +185,7 @@ Stripper.create(password: "password", email: "julz@lewagon.com", name: "Thunder 
   description: "Can I buy you a drink or do you just want the money?*You must have a p-value of at least 0.05, because I fail to reject you.", city: "Berlin", height: 184, hair_color: "brown",
   eye_color: "brown", age: 31, pics1: 'http://res.cloudinary.com/dncveixad/image/upload/v1519375327/update-pic.png', pics2: 'http://res.cloudinary.com/dncveixad/image/upload/v1519374515/IMG_7726.jpg', pics3: 'http://res.cloudinary.com/dncveixad/image/upload/v1519374515/IMG_5865.jpg', pics4: 'http://res.cloudinary.com/dncveixad/image/upload/v1519374515/IMG_5150.jpg')
 
+
 Stripper.create(password: "password", email: "martin@lewagon.com", name: "Lester the Molester",
   ethnicity: "caucasian", characters: "motz prof cowboy santa cab waiter bowling",price: 99, review: 3,
   description: "What is a nice girl like you doing in a dirty mind like mine?*Save water, shower with a friend!", city: "Berlin", height: 150, hair_color: "brown",
@@ -201,6 +200,7 @@ Stripper.create(password: "password", email: "Moritz@lewagon.com", name: "Michae
   ethnicity: "caucasian", characters: "motz prof cowboy santa cab waiter bowling",price: 99, review: 3,
   description: "You make me wish I weren’t gay!*What has 36 teeth and holds back the Incredible Hulk? My zipper.", city: "Berlin", height: 200, hair_color: "brown",
   eye_color: "brown", age: 80, pics1: 'http://res.cloudinary.com/dncveixad/image/upload/v1519381195/moritz5.jpg', pics2: 'http://res.cloudinary.com/dncveixad/image/upload/v1519381195/moritz1.jpg', pics3: 'http://res.cloudinary.com/dncveixad/image/upload/v1519381195/moritz2.jpg', pics4: 'http://res.cloudinary.com/dncveixad/image/upload/v1519381195/moritz2.jpg')
+
 
 User.create(email: "tuan@lewagon.com", password: "password", avatar: p1, name: "Tuan Pererea")
 User.create(email: "julian@lewagon.com", password: "password", avatar: p2, name: "Julian Lovelace")

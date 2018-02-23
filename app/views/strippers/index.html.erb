@@ -1,5 +1,10 @@
 <div class="container">
   <div class="row">
+    <div align="center">
+      <div class="button">
+        <%= render 'shared/searchbar' %>
+      </div>
+    </div>
     <% @strippers.each do |stripper| %>
       <%= link_to stripper_path(stripper) do %>
         <div class="col-xs-12 col-sm-4">

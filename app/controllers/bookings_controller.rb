@@ -44,7 +44,7 @@ class BookingsController < ApplicationController
 
   def destroy
     @booking.destroy
-    redirect_to strippers_path
+    redirect_to bookings_path
   end
 
 

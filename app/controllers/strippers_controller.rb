@@ -4,6 +4,11 @@ class StrippersController < ApplicationController
   def index
     @strippers = policy_scope(Stripper)
     @strippers = Stripper.all
+    if params[:query].present?
+      @strippers = Stripper.where("city ILIKE ?", "%#{params[:query]}%")
+    else
+      @strippers = Stripper.all
+    end
   end
 
   def show

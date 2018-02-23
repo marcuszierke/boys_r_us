@@ -51,26 +51,26 @@
            <h4>Services:</h4>
            <div class="characters-wrapper">
              <div class="characters">
-              <p><%= image_tag("policeman.png", class: "image-services") %>Policeman</p>
-              <p><%= image_tag("fireman.png", class: "image-services") %>Firefighter</p>
-              <p><%= image_tag("delivery.png", class: "image-services") %>Delivery guy</p>
+              <p <%= 'class=character-opacity' if !@stripper.characters.include?("Policeman") %>><%= image_tag("policeman.png", class: "image-services") %>Policeman</p>
+              <p <%= 'class=character-opacity' if !@stripper.characters.include?("Firefighter") %>><%= image_tag("fireman.png", class: "image-services") %>Firefighter</p>
+              <p <%= 'class=character-opacity' if !@stripper.characters.include?("Delivery-Guy") %>><%= image_tag("delivery.png", class: "image-services") %>Delivery guy</p>
             </div>
 
             <div class="characters">
-              <p><%= image_tag("motz.png", class: "image-services") %>Motz Salesman</p>
-              <p><%= image_tag("soldier.png", class: "image-services") %>Soldier</p>
-              <p><%= image_tag("professor.png", class: "image-services") %>Professor</p>
+              <p <%= 'class=character-opacity' if !@stripper.characters.include?("Motz-Salesman") %>><%= image_tag("motz.png", class: "image-services") %>Motz Salesman</p>
+              <p <%= 'class=character-opacity' if !@stripper.characters.include?("Soldier") %>><%= image_tag("soldier.png", class: "image-services") %>Soldier</p>
+              <p <%= 'class=character-opacity' if !@stripper.characters.include?("Professor") %>><%= image_tag("professor.png", class: "image-services") %>Professor</p>
             </div>
             <div class="characters">
-              <p><%= image_tag("cowboy.png", class: "image-services") %>Cowboy</p>
-              <p><%= image_tag("worker.png", class: "image-services") %>Construction Worker</p>
-              <p><%= image_tag("santa.png", class: "image-services") %>Santa</p>
+              <p <%= 'class=character-opacity' if !@stripper.characters.include?("Cowboy") %>><%= image_tag("cowboy.png", class: "image-services") %>Cowboy</p>
+              <p <%= 'class=character-opacity' if !@stripper.characters.include?("Construction-Worker") %>><%= image_tag("worker.png", class: "image-services") %>Construction Worker</p>
+              <p <%= 'class=character-opacity' if !@stripper.characters.include?("Santa") %>><%= image_tag("santa.png", class: "image-services") %>Santa</p>
             </div>
 
             <div class="characters">
-              <p><%= image_tag("cabdriver.png", class: "image-services") %>Cab Driver</p>
-              <p><%= image_tag("waiter.png", class: "image-services") %>Waiter</p>
-              <p><%= image_tag("bowling.png", class: "image-services") %>Bowling Instructor</p>
+              <p <%= 'class=character-opacity' if !@stripper.characters.include?("Cab-Driver") %>><%= image_tag("cabdriver.png", class: "image-services") %>Cab Driver</p>
+              <p <%= 'class=character-opacity' if !@stripper.characters.include?("Waiter") %>><%= image_tag("waiter.png", class: "image-services") %>Waiter</p>
+              <p <%= 'class=character-opacity' if !@stripper.characters.include?("Bowling-Instructor") %>><%= image_tag("bowling.png", class: "image-services") %>Bowling Instructor</p>
             </div>
 
           </div>

@@ -1,5 +1,19 @@
 // Specific CSS for your home-pagetest
 
+.wrapper-login {
+  background-size:cover ;
+  margin: 10px;
+  background-color: white;
+  height: 75vh;
+}
+
+
+
+.login {
+ width: 75%;
+  margin-top: 10px;
+}
+
 .container {
       margin: 10px auto;
 
@@ -122,6 +136,8 @@ margin-top: 36px;
   h1 {
     font-size: 40px;
         color: #6464a9;
+        margin-top: 10px;
+    margin-bottom: 34px;
   }
   h3 {
     font-size: 24px;
@@ -316,5 +332,90 @@ html, body {
 
 }
 
+// =================== Booking Index ====================
 
+.wrapper-booking {
+
+  padding:0;
+  margin: 10px;
+ background-size: cover;
+}
+
+.cards-booking a {
+  text-decoration: none;
+}
+.card-book {
+  opacity: 0.9;
+  box-shadow: 2px 2px 4px  #011A2B;
+  color: #011A2B ;
+  height: 21vh;
+  background-color: #ebebeb;
+  display: flex;
+  border-radius: 4px;
+  justify-content: space-around;
+  padding: 0;
+  margin:5px;
+  align-items: center;
+  // border-bottom: 1px solid lightgrey;
+}
+
+.booking-image{
+  margin-right: 30px;
+  border: 1px solid #ebebeb;
+}
+
+.message-name {
+  padding-right: 5px;
+  width: 20% !important;
+  height: 125px;
+  padding-bottom: 20px;
+  width: 250px;
+  border-right: 0.5px solid lightgrey;
+}
+
+.image-booking {
+  border-radius: 5px;
+  border-right: 0.5px solid lightgrey;
+}
+
+.message-address {
+  width: 20%;
+  height: 125px;
+  padding-bottom: 15px;
+  padding-right: 50px;
+  border-right: 0.5px solid lightgrey;
+}
+
+.message-body {
+  height: 125px;
+  padding-right: 50px;
+  border-right: 0.5px solid lightgrey;
+
+}
+
+.message-status {
+  height: 125px;
+
+}
+
+
+#tuan-video {
+  width: 25%;
+  }
+
+  .divider {
+    width: 700px;
+  }
+
+
+.details-show-booking {
+  line-height: 39px;
+}
+
+.warning {
+  color:white;
+  text-align:center;
+  width: 100%;
+  height: 100%;
+}
 // Specific CSS for your home-page

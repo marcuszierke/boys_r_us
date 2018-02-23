@@ -15,7 +15,10 @@ class BookingsController < ApplicationController
     @markers =
       [{
         lat: @booking.latitude,
-        lng: @booking.longitude#,
+        lng: @booking.longitude,
+        icon: ActionController::Base.helpers.asset_path("map-heart2.png")
+
+                 #,
         # infoWindow: { content: render_to_string(partial: "/flats/map_box", locals: { flat: flat }) }
       }]
 

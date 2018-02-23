@@ -1,8 +1,86 @@
+<% if @user.bookings.count > 0 %>
 
-<ul>
-<%  @user.bookings.each do |booking| %>
-<li><%= booking %></li>
+  <div class="wrapper-booking">
+
+
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="cards cards-booking">
+
+            <%  @user.bookings.each do |booking| %>
+
+          <%= link_to "bookings/#{booking.id}" , class: "link-booking" do %>
+
+          <div class="card card-book">
+
+          <div class="booking-image">
+
+            <%= cl_image_tag(booking.stripper.pics1, width: 100, height: 150)  %>
+
+          </div>
+
+            <div class="message-name">
+
+              <h4><%= booking.stripper.name %> </h4>
+              <h5> <%= booking.stripper.description.split("*")[0] %> </h5>
+
+            </div>
+
+            <div class="message-body">
+
+              <p>
+                <p></p>
+                <p></p>
+                You'll met him on:
+                <p></p>
+                <%=  booking.date%>
+              </p>
+
+            </div>
+
+            <div class="message-address">
+              <p></p>
+              <p></p>
+              Where?
+              <p></p>
+              <%= booking.address %>
+            </div>
+
+            <div class="message-status">
+
+              <p class="price">
+                <p></p>
+                <p></p>
+                For the <%= booking.duration %>h, price is:
+                <p></p>
+                €<%= booking.stripper.price * booking.duration%>
+              </p>
+
+            </div>
+
+          </div>
+            <% end %>
+            <% end %>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+<% else %>
+
+  <div class="warning">
+    <h1>You dont have any bookings yet</h1>
+  </div>
+
 <% end %>
 
 
-</ul>
+
+

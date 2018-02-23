@@ -10,7 +10,12 @@
         <div class="image-collection text-center">
 
           <%= image_tag(@stripper.pics2, class: "image-small") %>
-          <%= image_tag(@stripper.pics3, class: "image-small") %>
+
+          <% if @stripper.name == "The Penetrator" %>
+            <%= video_tag(@stripper.pics3, id: "tuan-video") %>
+          <% else %>
+            <%= image_tag(@stripper.pics3, class: "image-small") %>
+          <% end %>
           <%= image_tag(@stripper.pics4, class: "image-small") %>
         </div>
       </div>
@@ -42,6 +47,7 @@
             <i class="far fa-star" style="color:#ff2f515c; font-size: 15px;"></i>
             <% end %>
           </div>
+
          </div>
           <div class="biography-description">
            <h4>Why you want me</h4>
@@ -73,14 +79,46 @@
               <p <%= 'class=character-opacity' if !@stripper.characters.include?("Bowling-Instructor") %>><%= image_tag("bowling.png", class: "image-services") %>Bowling Instructor</p>
             </div>
 
+          <div class="characters">
+            <p><%= image_tag("cabdriver.png", class: "image-services") %>Cab Driver</p>
+            <p><%= image_tag("waiter.png", class: "image-services") %>Waiter</p>
+            <p><%= image_tag("bowling.png", class: "image-services") %>Bowling Instructor</p>
           </div>
-        </div>
-        <div class="btn-container">
-
-          <%= link_to "Book now", new_stripper_booking_path(@stripper), class: "btn btn-primary btn-lg profile" %>
 
         </div>
+      </div>
+      <div class="btn-container">
+
+        <%= link_to "Book now", new_stripper_booking_path(@stripper), class: "btn btn-primary btn-lg profile" %>
+
       </div>
     </div>
   </div>
 </div>
+</div>
+
+
+<script type="text/javascript">
+  var myVideo = document.getElementById('tuan-video');
+
+  myVideo.addEventListener('click', function () {
+    if (myVideo.paused) {
+      if (myVideo.requestFullscreen) {
+        myVideo.requestFullscreen();
+      }
+      else if (myVideo.msRequestFullscreen) {
+        myVideo.msRequestFullscreen();
+      }
+      else if (myVideo.mozRequestFullScreen) {
+        myVideo.mozRequestFullScreen();
+      }
+      else if (myVideo.webkitRequestFullScreen) {
+        myVideo.webkitRequestFullScreen();
+      }
+      myVideo.play();
+    }
+    else {
+      myVideo.pause();
+    }
+  }, false);
+</script>

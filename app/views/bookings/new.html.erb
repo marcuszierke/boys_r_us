@@ -44,8 +44,10 @@
             <h3>Please Choose:</h3>
             <div class="simple-form-bookign">
             <%= simple_form_for [@stripper, @booking],  html: { data: { data_provide: "datepicker" } } do |f| %>
+
             <%= f.input :character, collection: @stripper.characters.split(" "), prompt: "Choose your fantasy"  %>
             <%= f.input :date, label: "Date", input_html: {class: " form-control", "data-provide" => "datepicker"}  %>
+
             <%= f.input :duration, label: "Duration (in hours)", collection: [1,2,3]  %>
             <%= f.input :address, label: "Address"  %>
             </div>

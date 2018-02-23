@@ -182,6 +182,11 @@ Stripper.create(password: "password", email: "Taka@lewagon.com", name: "Juana Ba
   description: "Would you like Gin and Platonic, or do you prefer Scotch and Sofa?*I never thought I had such an exciting life, before I heard what people talk about me.", city: "Bangcock", height: 181, hair_color: "dark-brown",
   eye_color: "brown", age: 45, pics1: 'http://res.cloudinary.com/dncveixad/image/upload/v1519293976/Screen_Shot_2018-02-22_at_11.05.00.png', pics2: 'http://res.cloudinary.com/dncveixad/image/upload/v1519293976/Screen_Shot_2018-02-22_at_11.05.00.png', pics3: 'http://res.cloudinary.com/dncveixad/image/upload/v1519293976/Screen_Shot_2018-02-22_at_11.05.00.png', pics4: 'http://res.cloudinary.com/dncveixad/image/upload/v1519293976/Screen_Shot_2018-02-22_at_11.05.00.png')
 
+Stripper.create(password: "password", email: "julz@lewagon.com", name: "Thunder Butt",
+  ethnicity: "caucasian", characters: "motz prof cowboy santa cab waiter bowling",price: 99, review: 3,
+  description: "Can I buy you a drink or do you just want the money?*You must have a p-value of at least 0.05, because I fail to reject you.", city: "Berlin", height: 184, hair_color: "brown",
+  eye_color: "brown", age: 31, pics1: 'http://res.cloudinary.com/dncveixad/image/upload/v1519375327/update-pic.png', pics2: 'http://res.cloudinary.com/dncveixad/image/upload/v1519374515/IMG_7726.jpg', pics3: 'http://res.cloudinary.com/dncveixad/image/upload/v1519374515/IMG_5865.jpg', pics4: 'http://res.cloudinary.com/dncveixad/image/upload/v1519374515/IMG_5150.jpg')
+
 
 User.create(email: "tuan@lewagon.com", password: "password", avatar: p1, name: "Tuan Pererea")
 User.create(email: "julian@lewagon.com", password: "password", avatar: p2, name: "Julian Lovelace")

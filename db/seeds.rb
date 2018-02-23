@@ -202,7 +202,7 @@ Stripper.create(password: "password", email: "nicholas@lewagon.com", name: "Hugh
 Stripper.create(password: "password", email: "Moritz@lewagon.com", name: "Michael Dangelo",
   ethnicity: "caucasian", characters: "motz prof cowboy santa cab waiter bowling",price: 99, review: review,
   description: "You make me wish I weren’t gay!*What has 36 teeth and holds back the Incredible Hulk? My zipper.", city: "Berlin", height: 200, hair_color: "brown",
-  eye_color: "brown", age: 80, pics1: 'http://res.cloudinary.com/dncveixad/image/upload/v1519381195/moritz5.jpg', pics2: 'http://res.cloudinary.com/dncveixad/image/upload/v1519381195/moritz1.jpg', pics3: 'http://res.cloudinary.com/dncveixad/image/upload/v1519381195/moritz2.jpg', pics4: 'http://res.cloudinary.com/dncveixad/image/upload/v1519381195/moritz2.jpg')
+  eye_color: "brown", age: 80, pics1: 'http://res.cloudinary.com/dncveixad/image/upload/v1519384758/Screen_Shot_2018-02-23_at_12.18.45.png', pics2: 'http://res.cloudinary.com/dncveixad/image/upload/v1519381195/moritz1.jpg', pics3: 'http://res.cloudinary.com/dncveixad/image/upload/v1519381195/moritz2.jpg', pics4: 'http://res.cloudinary.com/dncveixad/image/upload/v1519381195/moritz2.jpg')
 
 User.create(email: "tuan@lewagon.com", password: "password", avatar: p1, name: "Tuan Pererea")
 User.create(email: "julian@lewagon.com", password: "password", avatar: p2, name: "Julian Lovelace")

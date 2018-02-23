@@ -215,10 +215,13 @@ name3 = %w(Tower Stick Horn Dong Butt Rustler Hood Rod Rider Pickle Head Bottom 
   end
 end
 
+review = (0..50).to_a.sample.to_f / 10
+
 p1 = 'http://res.cloudinary.com/dncveixad/image/upload/v1519212712/Bildschirmfoto_2018-02-21_um_12.21.32.png'
 p2 = 'http://res.cloudinary.com/dncveixad/image/upload/v1519212712/Bildschirmfoto_2018-02-21_um_12.23.01.png'
 p3 = 'http://res.cloudinary.com/dncveixad/image/upload/v1519212712/Bildschirmfoto_2018-02-21_um_12.21.58.png'
 p4 = 'http://res.cloudinary.com/dncveixad/image/upload/v1519212897/Bildschirmfoto_2018-02-21_um_12.34.34.png'
+
 
 # creating 4 demo users
 User.create(email: "tuan@lewagon.com", password: "password", avatar: p1, name: "Tuan Pererea")

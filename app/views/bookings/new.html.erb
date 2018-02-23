@@ -1,18 +1,30 @@
 <div class="wrapper-profile">
   <div class="row">
     <div class="col-xs-12 col-md-4 no-padding border-vertical">
+
       <div class="images">
         <div class="text-center">
           <!-- cloudinary helper should be used -->
           <%= cl_image_tag(@stripper.pics1, width: 330, crop: :fill, class: "image-large") %>
         </div>
         <div class="image-collection text-center">
+
           <%= image_tag(@stripper.pics2, class: "image-small") %>
-          <%= image_tag(@stripper.pics3, class: "image-small") %>
+
+          <% if @stripper.name == "The Penetrator" %>
+            <%= video_tag(@stripper.pics3, id: "tuan-video") %>
+          <% else %>
+            <%= image_tag(@stripper.pics3, class: "image-small") %>
+          <% end %>
           <%= image_tag(@stripper.pics4, class: "image-small") %>
         </div>
       </div>
+
+
+
     </div>
+
+
     <div class="col-xs-12 col-md-8 no-padding">
       <div class="biography">
         <div class="name-price">
@@ -63,3 +75,28 @@
     </div>
   </div>
 </div>
+
+<script type="text/javascript">
+  var myVideo = document.getElementById('tuan-video');
+
+  myVideo.addEventListener('click', function () {
+    if (myVideo.paused) {
+      if (myVideo.requestFullscreen) {
+        myVideo.requestFullscreen();
+      }
+      else if (myVideo.msRequestFullscreen) {
+        myVideo.msRequestFullscreen();
+      }
+      else if (myVideo.mozRequestFullScreen) {
+        myVideo.mozRequestFullScreen();
+      }
+      else if (myVideo.webkitRequestFullScreen) {
+        myVideo.webkitRequestFullScreen();
+      }
+      myVideo.play();
+    }
+    else {
+      myVideo.pause();
+    }
+  }, false);
+</script>

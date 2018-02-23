@@ -1,30 +1,66 @@
 
 <div class="wrapper-profile-show-booking">
-  <h1>This is your confirmed booking: </h1>
-  <br>
 
-  <h3>Your playboy: <span class="details-show-booking"><%= @booking.stripper.name %></span> </h3>
-  <h3>Why you chose him: <span class="details-show-booking"><%= @booking.stripper.description.split("*")[0] %></span> </h3>
-  <h3>The total price you will pay: <span class="details-show-booking">€<%= @booking.stripper.price * @booking.duration %></span> </h3>
-  <h3>The date: <span class="details-show-booking"><%= @booking.date %></span> </h3>
-  <br>
-  <br>
+  <div class="row">
 
-  <h3 id="meet-up">Where you will meet him:</h3>
-        <div class="stripper-booking-show">
-          <!-- cloudinary helper should be used -->
-          <%= cl_image_tag(@booking.stripper.pics1, width: 330, crop: :fill, class: "image-large") %>
+    <div class="col-xs-12 col-sm-3">
+      <%= cl_image_tag(@booking.stripper.pics1, width: 330, crop: :fill, class: "image-large show-booking") %>
+      <p style="text-align:center; margin-top: 20px; font-style:italic;"><%= @booking.stripper.name %> </p>
+
+    </div>
+
+    <div class="col-xs-12 col-sm-9">
+       <h1>Congratulations, your booking was successful! </h1>
+
+      <div class="show-bio-details">
+        <div class="header"><h3>Your playboy:</h3> </div>
+        <div class="header-value"><h3><%= @booking.stripper.name %></h3> </div>
+      </div>
+
+      <div class="show-bio-details">
+       <div class="header"><h3>Why you chose him:</h3></div>
+       <div class="header-value"><h3><%= @booking.stripper.description.split("*")[0] %></h3></div>
+     </div>
+
+     <div class="show-bio-details">
+       <div class="header"><h3>Total price:</h3> </div>
+       <div class="header-value"><h3>€<%= @booking.stripper.price * @booking.duration %></h3> </div>
+     </div>
+
+     <div class="show-bio-details">
+       <div class="header"><h3>The date:</h3></div>
+       <div class="header-value">
+         <h3> <%= @booking.date %></h3></div>
+       </div>
+
+       <div class="show-bio-details">
+         <div class="header"><h3 style="line-height: 164px;">Meeting point:</h3></div>
+         <div class="header-value">  <div
+          id="map"
+          style="width: 523px;;
+          height: 164px;"
+          data-marker-style=""
+          data-markers="<%= @markers.to_json %>"
+          ></div>
         </div>
 
 
-  <div
-  id="map"
-  style="width: 300px;
-  height: 200px;"
-  data-marker-style=""
-  data-markers="<%= @markers.to_json %>"
-></div>
+      </div>
 
+
+
+
+
+    </div>
+  </div>
 
 </div>
+
+
+
+
+
+
+
+
 

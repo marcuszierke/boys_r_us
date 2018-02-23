@@ -258,6 +258,7 @@ width: 297px;
 .biography-infos {
   display:flex;
   justify-content: space-around;
+  margin: 26px 0;
   p {
     margin: 0;
     font-size: 14px;
@@ -379,23 +380,25 @@ opacity: 0.7;
   text-decoration: none;
 
 }
+
 .card-book {
-  opacity: 0.9;
-  box-shadow: 2px 2px 4px  #011A2B;
-  color: #011A2B ;
-  height: 21vh;
-  background-color: #ebebeb;
-  display: flex;
-  border-radius: 4px;
-  justify-content: space-between;
-  padding: 0;
-  margin:5px;
-  align-items: center;
+    opacity: 0.9;
+    box-shadow: 2px 2px 4px #011A2B;
+    color: #011A2B;
+    height: 201px;
+    background-color: #ebebeb;
+    display: flex;
+    border-radius: 4px;
+    justify-content: space-between;
+    padding: 0;
+    margin: 5px 5px 5px 5px;
+    align-items: center;
 }
 
 .booking-image{
-  margin-right: 30px;
-  border: 1px solid #ebebeb;
+ margin-right: -52px;
+    margin-left: 25px;
+    border: 1px solid #ebebeb;
 }
 .wrapper-no-bookings {
   height: calc(100vh - 112px);
@@ -406,11 +409,11 @@ opacity: 0.7;
 }
 
 .message-name {
-  padding-right: 5px;
-  width: 20% !important;
-  height: 125px;
-  padding-bottom: 20px;
-  border-right: 0.5px solid lightgrey;
+    padding-right: 5px;
+    width: 20% !important;
+    height: 125px;
+    padding-bottom: 20px;
+    border-right: 0.5px solid lightgrey;
 }
 
 .image-booking {
@@ -420,24 +423,28 @@ opacity: 0.7;
 }
 
 .message-address {
-  width: 15%;
-  height: 125px;
-  padding-bottom: 15px;
-  padding-right: 50px;
-  border-right: 0.5px solid lightgrey;
+    width: 15%;
+    height: 125px;
+    padding-bottom: 15px;
+    padding-right: 100px;
+    text-align: center;
+    border-right: 0.5px solid lightgrey;
 }
 
 .message-body {
-  height: 125px;
-  width: 15% ;
-  padding-right: 50px;
-  border-right: 0.5px solid lightgrey;
+    height: 125px;
+    width: 15%;
+    padding-right: 50px;
+    text-align: center;
+    border-right: 0.5px solid lightgrey;
 
 }
 
 .message-status {
-  height: 125px;
-  width: 15% ;
+height: 125px;
+    width: 15%;
+    text-align: center;
+    padding-right: 72px;
 }
 
 .booking-flex {

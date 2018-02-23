@@ -166,7 +166,7 @@ Stripper.create(password: "password", email: "Vini@lewagon.com", name: "Gray Fox
 Stripper.create(password: "password", email: "anton@lewagon.com", name: "Biggus Diccus",
   ethnicity: "white", characters: "motz prof cowboy santa cab waiter bowling",price: 65, review: review,
   description: "On a scale from 1 to 10, you're a 9...... And I'm the 1 you need.*Fabulous ends in “us” coincidence? I think not", city: "Bangcock", height: 181, hair_color: "dark-brown",
-  eye_color: "brown", age: 60, pics1: 'http://res.cloudinary.com/dncveixad/image/upload/v1519294475/Screen_Shot_2018-02-22_at_11.13.41.png', pics2: 'http://res.cloudinary.com/dncveixad/image/upload/v1519294475/Screen_Shot_2018-02-22_at_11.13.52.png', pics3: 'http://res.cloudinary.com/dncveixad/image/upload/v1519295924/Screen_Shot_2018-02-22_at_11.13.25.png', pics4: 'http://res.cloudinary.com/dncveixad/image/upload/v1519294474/Screen_Shot_2018-02-22_at_11.13.16.png')
+  eye_color: "brown", age: 60, pics1: 'http://res.cloudinary.com/dncveixad/image/upload/v1519383821/Bild_von_iOS_hochgeladen.jpg', pics2: 'http://res.cloudinary.com/dncveixad/image/upload/v1519294475/Screen_Shot_2018-02-22_at_11.13.52.png', pics3: 'http://res.cloudinary.com/dncveixad/image/upload/v1519295924/Screen_Shot_2018-02-22_at_11.13.25.png', pics4: 'http://res.cloudinary.com/dncveixad/image/upload/v1519383812/Screen_Shot_2018-02-23_at_12.02.40.png')
 Stripper.create(password: "password", email: "Konstantinos@lewagon.com", name: "Daddy",
   ethnicity: "White", characters: "motz prof cowboy santa cab waiter bowling",price: 79, review: review,
   description: "You can call me The Fireman....mainly because I turn the hoes on*Oh Hey, you like it dirty too?", city: "Bangcock", height: 181, hair_color: "dark-brown",

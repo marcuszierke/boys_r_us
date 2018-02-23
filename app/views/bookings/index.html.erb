@@ -12,9 +12,17 @@
 
             <%  @user.bookings.each do |booking| %>
 
-          <%= link_to "bookings/#{booking.id}" , class: "link-booking" do %>
 
-          <div class="card card-book">
+<div class="col-xs-12 col-md-12 booking-flex">
+    <%= link_to "bookings/#{booking.id}" , class: "link-booking" do %>
+
+
+
+
+
+
+
+          <div class="card card-book ">
 
           <div class="booking-image">
 
@@ -61,8 +69,32 @@
 
             </div>
 
+
+
+
+
+
+
+
+
           </div>
             <% end %>
+
+            <%= link_to booking_path("#{booking.id}"), method: :delete do%>
+
+            <div class="booking-destruction">
+
+
+
+                <i class="fas fa-trash-alt"></i>
+
+
+
+            </div>
+            <% end %>
+
+            </div>
+
             <% end %>
 
         </div>
@@ -74,13 +106,12 @@
   </div>
 
 <% else %>
+  <div class="wrapper-no-bookings">
 
-  <div class="warning">
-    <h1>You dont have any bookings yet</h1>
+      <h1>You dont have any bookings yet</h1>
+
   </div>
-
 <% end %>
-
 
 
 

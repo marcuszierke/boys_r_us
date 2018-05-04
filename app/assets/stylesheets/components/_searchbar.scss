@@ -1,3 +1,8 @@
+@media only screen and (max-width: 450px) {
+  .button {
+    width: 150px;
+  }
+}
 .button {
   display: inline-block;
   -webkit-box-sizing: border-box;

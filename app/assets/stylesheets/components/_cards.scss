@@ -1,3 +1,19 @@
+//quick fix to have stripper index responsive
+@media only screen and (max-width: 450px) {
+  .stripper-mobile {
+    overflow-x: hidden;
+    height: 150vh !important;
+  }
+  .stripper-main {
+    width: 32%;
+  }
+  .button {
+    width: 30%;
+  }
+  .navbar-wagon-brand {
+    position:  relative;
+  }
+}
 .rating {
   height: 30px;
   width: 55px;
@@ -20,7 +36,6 @@
   opacity:0.85;
   position: relative;
   transition: all 250ms ease;
-
   border-radius: 2px;
 }
 .card-category {

@@ -7,17 +7,7 @@
           <!-- cloudinary helper should be used -->
           <%= cl_image_tag(@stripper.pics1, width: 330, crop: :fill, class: "image-large") %>
         </div>
-        <div class="image-collection text-center">
 
-          <%= image_tag(@stripper.pics2, class: "image-small") %>
-
-          <% if @stripper.name == "The Penetrator" %>
-            <%= video_tag(@stripper.pics3, id: "tuan-video") %>
-          <% else %>
-            <%= image_tag(@stripper.pics3, class: "image-small") %>
-          <% end %>
-          <%= image_tag(@stripper.pics4, class: "image-small") %>
-        </div>
       </div>
     </div>
 

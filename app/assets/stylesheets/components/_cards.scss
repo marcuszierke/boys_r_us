@@ -4,6 +4,29 @@
     overflow-x: hidden;
     height: 150vh !important;
   }
+  h4 span {
+    font-size: 70px !important
+  }
+  .card-description span {
+    font-size: 60px;
+  }
+  .card:hover #popup {
+    padding-top: 200px !important;
+  }
+  .fa-star {
+    font-size: 60px !important;
+  }
+  .card-footer {
+    height: 25vh !important;
+  }
+  .stripper-price p {
+    font-size: 75px !important;
+  }
+  .details-inner {
+    i {
+      font-size: 3em !important;
+    }
+  }
   .stripper-main {
     width: 32%;
   }

@@ -3,25 +3,17 @@ class BookingsController < ApplicationController
   before_action :find_booking, only: [ :destroy, :show]
 
   def index
-    @bookings = policy_scope(Booking)
+    @bookings = Booking.all
     @user = current_user
   end
 
   def show
-
-
-    #for maps integration:
-
     @markers =
       [{
         lat: @booking.latitude,
         lng: @booking.longitude,
         icon: ActionController::Base.helpers.asset_path("map-heart2.png")
-
-                 #,
-        # infoWindow: { content: render_to_string(partial: "/flats/map_box", locals: { flat: flat }) }
       }]
-
   end
 
   def new

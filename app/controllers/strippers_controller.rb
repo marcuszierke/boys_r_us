@@ -10,7 +10,6 @@ class StrippersController < ApplicationController
 
   def show
     @stripper = Stripper.find(params[:id])
-    authorize @stripper
   end
 
   def edit

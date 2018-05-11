@@ -1,5 +1,4 @@
 class BookingsController < ApplicationController
-  # skip_before_action :authenticate_user!, only: [:index, :show, :new]
   before_action :find_booking, only: [ :destroy, :show]
 
   def index
@@ -19,7 +18,6 @@ class BookingsController < ApplicationController
   def new
     @stripper = Stripper.find(params[:stripper_id])
     @booking = Booking.new
-    authorize @booking
   end
 
   def create
@@ -30,7 +28,6 @@ class BookingsController < ApplicationController
     if @booking.save
       redirect_to booking_path(@booking) #since we don't have a users-controller redirect_to the @booking page?
     end
-    authorize @booking
   end
 
 
@@ -44,7 +41,6 @@ class BookingsController < ApplicationController
 
   def find_booking
     @booking = Booking.find(params[:id])
-    authorize @booking
   end
 
   def booking_params

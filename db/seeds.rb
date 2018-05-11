@@ -113,7 +113,6 @@ photos =[
   ['http://res.cloudinary.com/dxoifz29v/image/upload/v1526000798/Hugh_R._Ection.jpg'],
   ['http://res.cloudinary.com/dxoifz29v/image/upload/v1525999906/Admiral_Mighty_Balls.jpg'],
   ['http://res.cloudinary.com/dxoifz29v/image/upload/v1525908944/Harry_Baals.jpg'],
-  ['http://res.cloudinary.com/dxoifz29v/image/upload/v1525908958/Hugh_R._Ection.jpg'],
   ['http://res.cloudinary.com/dxoifz29v/image/upload/v1525999908/Ben_Dover.jpg'],
   ['http://res.cloudinary.com/dxoifz29v/image/upload/v1525908941/Toyboy.jpg'],
   ['http://res.cloudinary.com/dxoifz29v/image/upload/v1525999906/Don_King.jpg'],
